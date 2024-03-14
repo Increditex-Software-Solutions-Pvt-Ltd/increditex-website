@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+    --main-color: #f6c540;
+    --dark-color: #191923;
+    --light-color: #f8f8f8;
+    --semimain-color: #f5f2e6;
+    --semilight-color: #f3f3f3;
+    --semidark-color: #23232d;
+}
+
+body {
+    background-color: var(--semilight-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 43px;
+}
+
+h3 {
+    font-family: 37px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 17px;
+}
+
+.x-small {
+    font-size: 11.5px;
+}
+
+.small {
+    font-size: 13px;
+}
+
+.normal {
+    font-size: 14px;
+}
+
+.medium {
+    font-size: 17px;
+}
+
+.large {
+    font-size: 20px;
+}
+
+.text-main {
+    color: var(--main-color);
+}
+
+.text-semimain {
+    color: var(--semimain-color);
+}
+
+.text-dark {
+    color: var(--dark-color) !important;
+}
+
+.text-light {
+    color: var(--light-color) !important;
+}
+
+.text-brand {
+    color: #efcc40;
+}
+
+.bg-dark {
+    background-color: var(--dark-color) !important;
+}
+
+.bg-semidark {
+    background-color: var(--semidark-color) !important;
+}
+
+.bg-semilight {
+    background-color: var(--semilight-color);
+}
+
+.border-semilight {
+    border: 1px solid #c7c7c7;
+}
+
+.bg-semimain {
+    background-color: var(--semimain-color);
+}
+
+.bg-main {
+    background-color: var(--main-color);
+}
+
+.z9 {
+    z-index: 999;
+}
+
+.contactbtn {
+    background-color: var(--main-color);
+    color: var(--dark-color);
+    padding: 13px 30px;
+    border: 0;
+    font-size: 14.5px;
+    width: 170px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.m-top {
+    margin-top: -86px;
+}
+
+.contactbtn:hover {
+    background-color: #f4ce64;
+    transition: all 0.5s;
+}
+
+.navbar {
+    background-color:  rgba(0, 0, 0, 0.5) !important;
+}
+
+.navbarlinks.active {
+    color: var(--main-color) !important;
+}
+
+.navbar-scrolled {
+    background-color: rgba(0, 0, 0, 0.77) !important;
+    transition: all 0.3s;
+    border-bottom: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbarlinks {
+    color: var(--light-color);
+    letter-spacing: 1.3px;
+    font-weight: 400;
+}
+/* dropdown animation */
+.navbarlinks:focus{
+    color: var(--light-color) !important;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100% !important;
+    border-top: 1.66px solid var(--main-color);
+    left: 0 !important;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 !important;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block !important;
+}
+  
+  .nav-item:hover, .nav-item:focus-within {
+    display: block;
+  }
+.navbarlinks:hover{
+    color: var(--light-color);
+}
+.navbar-scrolled .navbarlinks{
+    /* color: var(--dark-color) !important; */
+    font-weight: 400 !important;
+}
+.navbar-scrolled .logo{
+    color: #e0c456;
+    font-size: 24px;
+    letter-spacing: 0.33px;
+    font-family: "PT Serif", serif;
+    font-weight: 500;
+}
+.navbar-scrolled .logo span{
+    color: var(--main-color);
+    font-weight: 600;
+}
+.navbar-scrolled .logo:hover{
+    color: #e0c456;
+}
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.dropdown-item {
+    color: white; 
+    font-size: 13.5px;
+    transition: all 0.4s ease-in-out;
+}
+
+.dropdown-item:hover {
+    background: linear-gradient(to right,rgba(255, 255, 255, 0.1),rgba(71, 71, 71, 0.1));
+    color: var(--semimain-color);
+}
+
+.navbarlinks:hover {
+    color: var(--light-color);
+}
+
+.navbar-scrolled .navbarlinks {
+    /* color: var(--dark-color); */
+    font-weight: 400;
+}
+
+.heading::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 2.6px;
+    background: linear-gradient(214.67deg, #faba0d -1.7%, #f3911c 92.98%);
+}
+
+.fbbtn {
+    background-color: #3b5998 !important;
+    border: 1px solid #3b5998 !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.instabtn {
+    background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+}
+
+.linkdinbtn {
+    background-color: #0077b5 !important;
+    border: 1px solid #0077b5 !important;
+}
+
+.container {
+    max-width: 1090px !important;
+}
+
+/* team.css */
+
+.bg-team {
+    width: 100%;
+    height: 500px;
+    background: #000;
+    display: flex;
+}
+
+.bg-main-side {
+    width: calc(60% - 40px);
+    height: 100%;
+    background: var(--main-color);
+}
+
+.bg-dark-side {
+    width: calc(40% + 40px);
+    height: 100%;
+    background: var(--dark-color);
+    border-left: 80px solid var(--main-color);
+    border-bottom: 500px solid transparent;
+    box-sizing: border-box;
+}
+
+.ellipse {
+    background: url('./img/Ellipse.png');
+    position: absolute;
+    background-repeat: no-repeat;
+    content: '';
+    height: 50%;
+    width: 79%;
+    top: 5%;
+    left: 50%;
+}
+
+.s-overlay {
+    background: #000;
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.object-sphere {
+    background: rgb(113, 112, 112);
+    position: absolute;
+    right: -10%;
+    top: -10%;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    opacity: .3;
+    backdrop-filter: blur(15px);
+    animation: ripple1 9s linear infinite;
+    visibility: hidden;
+}
+
+.object-sphere-1 {
+    background: rgb(113, 112, 112);
+    position: absolute;
+    right: -10%;
+    top: -10%;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    opacity: .3;
+    backdrop-filter: blur(15px);
+    animation: ripple2 9s linear infinite;
+    animation-delay: 3s;
+    visibility: hidden;
+}
+
+.object-sphere-2 {
+    background: rgb(113, 112, 112);
+    position: absolute;
+    right: -10%;
+    top: -10%;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    opacity: .3;
+    backdrop-filter: blur(15px);
+    animation: ripple3 9s linear infinite;
+    animation-delay: 6s;
+    visibility: hidden;
+}
+
+
+@keyframes ripple1 {
+    0% {
+        transform: scale(1);
+        opacity: .2;
+        visibility: hidden;
+    }
+
+    100% {
+        transform: scale(3.2);
+        opacity: 0;
+        visibility: visible;
+    }
+}
+
+@keyframes ripple2 {
+    0% {
+        transform: scale(1);
+        opacity: .2;
+        visibility: hidden;
+    }
+
+    100% {
+        transform: scale(3.2);
+        opacity: 0;
+        visibility: visible;
+    }
+}
+
+@keyframes ripple3 {
+    0% {
+        transform: scale(1);
+        opacity: .2;
+        visibility: hidden;
+    }
+
+    100% {
+        transform: scale(3.2);
+        opacity: 0;
+        visibility: visible;
+    }
+}
+
+.teamheadingcontent {
+    top: 50%;
+}
+
+
+.teamcard {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin-top: 30px;
+    border-radius: 50% !important;
+    overflow: hidden;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 50% !important;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.teamcard:hover .content {
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+}
+
+.front,
+.back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    text-align: center;
+    backface-visibility: hidden;
+    border-radius: 50% !important;
+}
+
+.front img {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+
+.back {
+    background: linear-gradient(#191923, #272731);
+    transform: rotateY(180deg);
+}
+
+.backcontent {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profilename {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    height: 67px;
+    background-color: rgba(0, 0, 0, 0.45);
+    /* text-align: center; */
+    display: flex; 
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.profilename h6 {
+    margin: 0;
+}
+
+
+
+
+
+.box div{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 5px solid #fad15d;
+}
+
+.box div:nth-child(1){
+    top: 100px;
+    left: 50px;
+    animation: blink 12s linear infinite;
+}
+.box div:nth-child(2){
+    top: 100px;
+    left: 350px;
+    animation: blink 15s linear infinite;
+}
+.box div:nth-child(3){
+    top: 250px;
+    left: 10px; 
+    animation: blink 13s linear infinite;
+}
+.box div:nth-child(4){
+    top: 440px;
+    left: 80px;
+animation: blink 10s linear infinite;
+}
+.box div:nth-child(5){
+    top: 270px;
+    left: 350px;
+    animation: blink 13s linear infinite;
+}
+.box div:nth-child(6){
+    top: 420px;
+    left: 320px;
+    animation: blink 15s linear infinite;
+}
+.box div:nth-child(7){
+    top: 15px;
+    left: 250px;
+    animation: blink 10s linear infinite;
+}
+.box div:nth-child(8){
+    top: 300px;
+    left: 200px;
+    animation: blink 13s linear infinite;
+}
+
+
+@keyframes blink{
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.3) translateY(-70px) rotate(360deg);
+        opacity: 0.7;
+    }
+}
+
+@media(max-width:1000px) {
+    .teamcard {
+        border: 0;
+        width: 200px;
+        height: 200px;
+        perspective: 500px;
+        margin-top: 30px;
+        border-radius: 50% !important;
+    }
+
+    .front,
+    .back {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: white;
+        line-height: 200px;
+        color: #03446A;
+        text-align: center;
+        font-size: 60px;
+        border-radius: 5px;
+        backface-visibility: hidden;
+        border-radius: 50% !important;
+    }
+    .front img {
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media(max-width:720px) {
+    .bg-main-side {
+        width: 0%;
+        height: 100%;
+        background: var(--dark-color);
+    }
+
+    .bg-dark-side {
+        width: 100%;
+        height: 100%;
+        background: var(--dark-color);
+        border-left: 80px solid var(--dark-color);
+        border-bottom: 450px solid transparent;
+        box-sizing: border-box;
+    }
+
+}
+
+.logo{
+    color: var(--dark-color);
+    font-size: 24px;
+    letter-spacing: 0.33px;
+    font-family: "PT Serif", serif;
+    font-weight: 500;
+}
+.logo span{
+    color: var(--dark-color);
+    font-weight: 600;
+}
+.logo:hover{
+    color: var(--dark-color);
+}
+.x-small{
+    font-size: 12.5px;
+}
+
+/* ///mymodak Chat bot ////
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/659688c80ff6374032bc3183/1hja0ckul';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script--> */

@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+    --main-color: #f6c540;
+    --dark-color: #191923;
+    --light-color: #f8f8f8;
+    --semimain-color: #f5f2e6;
+    --semilight-color: #f3f3f3;
+    --semidark-color: #23232d;
+}
+
+body {
+    background-color: var(--semilight-color);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 43px;
+}
+
+h3 {
+    font-family: 37px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 17px;
+}
+
+.small {
+    font-size: 13px;
+}
+
+.normal {
+    font-size: 14px;
+}
+
+.medium {
+    font-size: 17px;
+}
+
+.large {
+    font-size: 20px;
+}
+
+.text-main {
+    color: var(--main-color);
+}
+
+.text-semimain {
+    color: var(--semimain-color);
+}
+
+.text-dark {
+    color: var(--dark-color) !important;
+}
+
+.text-light {
+    color: var(--light-color) !important;
+}
+
+.text-brand {
+    color: #efcc40;
+}
+
+.bg-dark {
+    background-color: var(--dark-color) !important;
+}
+
+.bg-semidark {
+    background-color: var(--semidark-color) !important;
+}
+
+.bg-semimain {
+    background-color: var(--semimain-color);
+}
+
+.bg-main {
+    background-color: var(--main-color);
+}
+
+.z9 {
+    z-index: 999;
+}
+
+.contactbtn {
+    background-color: var(--main-color);
+    color: var(--dark-color);
+    padding: 13px 30px;
+    border: 0;
+    font-size: 14.5px;
+    width: 170px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.m-top {
+    margin-top: -86px;
+}
+
+.contactbtn:hover {
+    background-color: #f4ce64;
+    transition: all 0.5s;
+}
+
+.navbar {
+    background-color:  rgba(0, 0, 0, 0.5) !important;
+}
+
+.navbarlinks.active {
+    color: var(--main-color) !important;
+}
+
+.navbar-scrolled {
+    background-color: rgba(0, 0, 0, 0.77) !important;
+    transition: all 0.3s;
+    border-bottom: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbarlinks {
+    color: var(--light-color);
+    letter-spacing: 1.3px;
+    font-weight: 400;
+}
+.section-padding{
+    padding: 6rem 0;
+}
+/* dropdown animation */
+.navbarlinks:focus {
+    color: var(--light-color) !important;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100% !important;
+    border-top: 1.66px solid var(--main-color);
+    left: 0 !important;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 !important;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block !important;
+}
+
+.nav-item:hover,
+.nav-item:focus-within {
+    display: block;
+}
+
+.navbarlinks:hover {
+    color: var(--light-color);
+}
+
+.navbar-scrolled .navbarlinks {
+    font-weight: 400 !important;
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.dropdown-item {
+    color: white;
+    font-size: 13.5px;
+    transition: all 0.4s ease-in-out;
+}
+
+.dropdown-item:hover {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(71, 71, 71, 0.1));
+    color: var(--semimain-color);
+}
+
+.navbarlinks:hover {
+    color: var(--light-color);
+}
+
+.navbar-scrolled .navbarlinks {
+    color: var(--light-color);
+    font-weight: 400;
+}
+
+.heading::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 2.6px;
+    background: linear-gradient(214.67deg, #faba0d -1.7%, #f3911c 92.98%);
+}
+
+.fbbtn {
+    background-color: #3b5998 !important;
+    border: 1px solid #3b5998 !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.instabtn {
+    background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+}
+
+.linkdinbtn {
+    background-color: #0077b5 !important;
+    border: 1px solid #0077b5 !important;
+}
+
+.container {
+    max-width: 1090px !important;
+}
+
+.bg-about {
+    background: url('./img/about.jpg');
+    height: 500px !important;
+    background-size: cover;
+    background-position: right;
+}
+.top-40{
+    top: 90px;
+}
+.about-slide {
+    top: 220px;
+    right: 30px;
+}
+
+.top-40 {
+    top: 90px;
+}
+
+.aimcard-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Adjust the height as needed */
+    overflow: hidden;
+    transition: transform 0.4s ease-in;
+}
+
+.aimcard {
+    width: 100%;
+    height: 450px; /* Adjust the height as needed */
+    background-color: white;
+    clip-path: polygon(0% 0%, 100% 0, 100% 83%, 50% 100%, 0 83%);
+    border-radius: 10px;
+    position: relative;
+    color: black;
+    transform: translateY(-10px);
+    z-index: 1; /* Ensure the main aimcard is above the background card */
+}
+
+.background-card {
+    position: absolute;
+    top: 3px; /* Adjust the position to control the visibility of the background card */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 450px; /* Adjust the height as needed */
+    background: linear-gradient(to right, #f6c540, #f09433);
+    clip-path: polygon(0% 0%, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    border-radius: 10px;
+    margin-bottom: -10px; /* Negative margin to extend the background card */
+    z-index: -1;
+}
+.aimcard-circle {
+    position: absolute;
+    top: -100px; /* Adjust this value to control the positioning */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right, #f6c540, #f09433); /* Adjust as needed */
+    border: 2px solid white; /* Adjust as needed */
+    border-radius: 50%;
+    z-index: 2; /* Place the circle above the background card */
+}
+.aimcard-inner-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px; /* Adjust the size of the inner circle */
+    height: 150px; /* Adjust the size of the inner circle */
+    background-color: var(--semidark-color); /* Background color for the inner circle */
+    border-radius: 50%;
+    z-index: 3; /* Place the inner circle above the aimcard */
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 32px;
+}
+.content-box{
+    position: absolute;
+    top: 28%;
+    left: 0;
+    width: 100%;
+    height: 250px;
+}
+.aimcard-container:hover{
+    transform: translateY(-20px);
+}
+.logo{
+    color: #e0c456;
+    font-size: 24px;
+    letter-spacing: 0.33px;
+    font-family: "PT Serif", serif;
+    font-weight: 500;
+}
+.logo span{
+    color: var(--main-color);
+    font-weight: 600;
+}
+.logo:hover{
+    color: #e0c456;
+}
+.x-small{
+    font-size: 12.5px;
+}
+/* preloader css start */
+
+.preloader {
+    background-color: rgba(0, 0, 0, 0.99);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    transition: all 0.4s ease-in;
+}
+
+.preloader .preloader-block {
+    bottom: 50%;
+    position: fixed;
+    right: 50%;
+    transform: translate(50%, 50%);
+    z-index: 3000;
+}
+
+.ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border: 3px solid #3c3c3c;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.ring:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 3px solid var(--light-color);
+    border-right: 3px solid var(--light-color);
+    border-radius: 50%;
+    animation: animateC 2s linear infinite;
+}
+
+.loader {
+    display: block;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 50%;
+    width: 50%;
+    height: 4px;
+    background: transparent;
+    transform-origin: left;
+    animation: animate 2s linear infinite;
+}
+
+.loader:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--light-color);
+    top: 0px;
+    right: -4px;
+    box-shadow: 0 0 20px var(--light-color);
+}
+
+@keyframes animateC {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(405deg);
+    }
+}

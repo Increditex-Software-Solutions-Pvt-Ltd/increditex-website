@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+    --main-color: #f6c540;
+    --dark-color: #191923;
+    --light-color: #f8f8f8;
+    --semimain-color: #f5f2e6;
+    --semilight-color: #f3f3f3;
+    --semidark-color: #23232d;
+}
+
+body {
+    background-color: var(--semilight-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 43px;
+}
+
+h3 {
+    font-family: 37px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 17px;
+}
+.x-small{
+    font-size: 11.5px;
+}
+.small {
+    font-size: 13px;
+}
+
+.normal {
+    font-size: 14px;
+}
+
+.medium {
+    font-size: 17px;
+}
+
+.large {
+    font-size: 20px;
+}
+
+.text-main {
+    color: var(--main-color);
+}
+
+.text-semimain {
+    color: var(--semimain-color);
+}
+
+.text-dark {
+    color: var(--dark-color) !important;
+}
+
+.text-light {
+    color: var(--light-color) !important;
+}
+.text-brand{
+    color: #efcc40;
+}
+.bg-dark {
+    background-color: var(--dark-color) !important;
+}
+.bg-semidark{
+    background-color: var(--semidark-color) !important;
+}
+.bg-semilight{
+    background-color: var(--semilight-color);
+}
+.border-semilight{
+    border: 1px solid #c7c7c7;
+}
+.bg-semimain {
+    background-color: var(--semimain-color);
+}
+.bg-main{
+    background-color: var(--main-color);
+}
+.z9{
+    z-index: 999;
+}
+.contactbtn {
+    background-color: var(--main-color);
+    color: var(--dark-color);
+    padding: 13px 30px;
+    border: 0;
+    font-size: 14.5px;
+    width: 170px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.m-top {
+    margin-top: -86px;
+}
+.contactbtn:hover {
+    background-color: #f4ce64;
+    transition: all 0.5s;
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.navbarlinks.active{
+    color: var(--main-color) !important;
+}
+.navbar-scrolled{
+    background-color: rgba(0, 0, 0, 0.77) !important;
+    transition: all 0.3s;
+    border-bottom: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbarlinks{
+    color: var(--light-color);
+    letter-spacing: 1.3px;
+    font-weight: 400;
+}
+/* dropdown animation */
+.navbarlinks:focus{
+    color: var(--light-color) !important;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100% !important;
+    border-top: 1.66px solid var(--main-color);
+    left: 0 !important;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 !important;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block !important;
+}
+  
+  .nav-item:hover, .nav-item:focus-within {
+    display: block;
+  }
+.navbarlinks:hover{
+    color: var(--light-color);
+}
+.navbar-scrolled .navbarlinks{
+    /* color: var(--dark-color) !important; */
+    font-weight: 400 !important;
+}
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.dropdown-item {
+    color: white; 
+    font-size: 13.5px;
+    transition: all 0.4s ease-in-out;
+}
+
+.dropdown-item:hover {
+    background: linear-gradient(to right,rgba(255, 255, 255, 0.1),rgba(71, 71, 71, 0.1));
+    color: var(--semimain-color);
+}
+
+.navbarlinks:hover{
+    color: var(--light-color);
+}
+.navbar-scrolled .navbarlinks{
+    /* color: var(--dark-color); */
+    font-weight: 400;
+}
+.heading::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 2.6px;
+    background: linear-gradient(214.67deg, #faba0d -1.7%, #f3911c 92.98%);
+}
+.fbbtn{
+    background-color: #3b5998 !important;
+    border: 1px solid #3b5998 !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+.instabtn{
+    background-image:linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important; 
+}
+.linkdinbtn{
+    background-color: #0077b5 !important;
+    border: 1px solid #0077b5 !important;
+}
+.container {
+    max-width: 1090px !important;
+}
+
+.bg-contact{
+    background: url('./img/contact.jpg')no-repeat center;
+    background-size: cover;
+}
+.top-padding{
+    padding: 9rem 0;
+}
+.contactinp:focus{
+   box-shadow: none !important;
+   border: 1px solid #c2c0c0;
+   background-color: var(--semilight-color);
+}
+input,textarea{
+    font-size: 13px !important;
+    font-weight: 500 !important;
+}
+input::placeholder,textarea::placeholder{
+    color: #9c9a9a !important;
+    font-size: 13px;
+}
+textarea{
+    height: 120px;
+}
+.btn-contact{
+    background-color: var(--semidark-color);
+    color: var(--light-color);
+   padding: 16px 28px;
+   font-size: 13px;
+   transition: all 0.4s ease;
+}
+.btn-contact:hover{
+    background-color: var(--semidark-color);
+    opacity: 0.9;
+    color: var(--light-color);
+}
+.formInput{
+    width: 90%;
+}
+
+iframe{
+    width: 100%;
+    height: 400px;
+}
+
+.social-links {
+    display: flex;
+  }
+  
+  .social-links a {
+    min-width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+    margin: 20px 12px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+  }
+  
+  .social-links a .fab {
+    font-size: 14px;
+    line-height: 40px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+  }
+  
+  .social-links a::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    background: #000;
+    background: linear-gradient(-45deg,#e6683c, #ffec17);
+    position: absolute;
+    transition: 0.5s;
+  }
+  
+  .social-links a:hover::after {
+    top: 0;
+  }
+  
+  .social-links a:hover .fab {
+    color: #fff;
+  }
+  
+  .social-links a:hover {
+    transform: translateY(-7px);
+  }
+  .logo{
+    color: #e0c456;
+    font-size: 24px;
+    letter-spacing: 0.33px;
+    font-family: "PT Serif", serif;
+    font-weight: 500;
+}
+.logo span{
+    color: var(--main-color);
+    font-weight: 600;
+}
+.logo:hover{
+    color: #e0c456;
+}
+.x-small{
+    font-size: 12.5px;
+}

@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader-block">
+            <div class="preloader-icon" style="display: none;">
+                <div class="ring">
+                    <img src="/img/mainlogo.png" class="img-fluid animate__animated animate__flip" width="80px" alt="">
+                    <span class="loader"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg  position-sticky top-0 z9 py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="/index.html" class="navbar-brand">
+                    <img src="/img/logo.png" width="180px" class="img-fluid" alt="">
+                </a>
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+                <span>
+                    <i class="bi bi-list text-white" style="font-size: 30px;"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link navbarlinks normal active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link navbarlinks normal" href="/about.html">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown" id="servicesDropdown">
+                        <a class="nav-link navbarlinks normal dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu animate__animated animate__flipInY animate__fast">
+                            <li><a class="dropdown-item py-2" href="/web.html">Web Development
+                                </a></li>
+                            <li><a class="dropdown-item py-2" href="/app.html">App Development
+                                </a></li>
+                            <li><a class="dropdown-item py-2" href="/ittraining.html">IT Training & Learning</a></li>
+                            <li><a class="dropdown-item py-2" href="/graphic.html">Graphic ,UI & UX Designing
+                                </a></li>
+                            <li><a class="dropdown-item py-2" href="/digital.html">Digital Marketing
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link navbarlinks normal" href="/team.html">Team</a>
+                    </li>
+
+                </ul>
+                <a class="contactbtn" href="/contact.html">Contact us</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="position-relative m-top">
+        <img src="/img/home-background.jpg" class="d-block w-100 bannerslider" alt="">
+        <div class="position-absolute slide-50">
+            <h1 class="text-semimain mainheading" style="letter-spacing: 1.3px;">Welcome to
+                <span class="text-main">INCREDITEX</span>
+            </h1>
+            <p class="text-light my-4  mainpara" style="letter-spacing: 1px;">Custom Software Development Company</p>
+
+            <button class="touchbtn animate__animated animate__slow animate__bounceInUp" onclick="scrollToTalk()">LET'S
+                TALK</button>
+        </div>
+    </section>
+
+    <section class=" section-padding overflow-hidden">
+        <div class="container">
+            <h3 class="text-dark text-center pt-3 my-3  heading position-relative">Services we provide</h3>
+
+            <div class="row mt-4">
+                <div class="col-md-6 col-sm-6 col-12">
+                    <a href="/web.html" class="text-decoration-none">
+                        <div class="card webcard">
+                            <p class="webcard-title">Web development</p>
+                            <p class="small-desc mt-3">
+                                Our custom website development services are designed to help businesses stand
+                                out in the digital landscape. Whether you're a startup looking to establish your online
+                                presence or an established enterprise seeking to revamp your website, our team of
+                                skilled developers will work closely with you to bring your vision to life. We develop
+                                websites that are not only visually appealing but also highly functional, user-friendly,
+                                and optimized for performance across all devices and platforms.
+                            </p>
+                            <div class="go-corner">
+                                <div class="go-arrow">
+                                    <img src="/img/web.png" class="img-fluid" width="40px" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-md-6 col-sm-6 col-12">
+                    <a href="/app.html" class="text-decoration-none">
+                        <div class="card webcard">
+                            <p class="webcard-title">App development</p>
+                            <p class="small-desc mt-3">
+                                For businesses looking to expand their online sales channels, we offer
+                                comprehensive e-commerce solutions tailored to your unique requirements. From
+                                intuitive user interfaces to seamless payment gateways and robust inventory
+                                management systems, our e-commerce websites are designed to enhance the
+                                shopping experience for your customers and drive conversions. We leverage
+                                industry-leading e-commerce platforms such as Shopify, WooCommerce, Magento,
+                                and custom solutions to ensure scalability and flexibility as your business grows.
+                            </p>
+                            <div class="go-corner">
+                                <div class="go-arrow">
+                                    <img src="/img/app.png" class="img-fluid" width="45px" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-md-6 col-sm-6 col-12">
+                    <a href="/digital.html" class="text-decoration-none">
+                        <div class="card webcard">
+                            <p class="webcard-title">Digital marketing</p>
+                            <p class="small-desc mt-3">
+                                We specialize in developing content management systems (CMS) that empower
+                                businesses to manage and update their website content effortlessly. Whether you
+                                prefer popular CMS platforms like WordPress, Joomla, or Drupal, or require a
+                                custom-built solution, our experienced developers will create a CMS that suits your
+                                specific needs. With user-friendly interfaces and powerful features, you'll have
+                                complete control over your website content, enabling you to keep your site fresh,
+                                relevant, and engaging for your audience.
+                            </p>
+                            <div class="go-corner">
+                                <div class="go-arrow">
+                                    <img src="/img/digital.png" class="img-fluid" width="40px" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                   
+                </div>
+                <div class="col-md-6 col-sm-6 col-12">
+                    <a href="/graphic.html" class="text-decoration-none">
+                        <div class="card webcard">
+                            <p class="webcard-title">UI/UX development</p>
+                            <p class="small-desc mt-3">
+                                We specialize in developing content management systems (CMS) that empower
+                                businesses to manage and update their website content effortlessly. Whether you
+                                prefer popular CMS platforms like WordPress, Joomla, or Drupal, or require a
+                                custom-built solution, our experienced developers will create a CMS that suits your
+                                specific needs. With user-friendly interfaces and powerful features, you'll have
+                                complete control over your website content, enabling you to keep your site fresh,
+                                relevant, and engaging for your audience.
+                            </p>
+                            <div class="go-corner">
+                                <div class="go-arrow">
+                                    <img src="/img/uixux.png" class="img-fluid" width="40px" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                  
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="bg-darkserv my-5 py-5 section-padding">
+        <div class="container">
+            <h3 class="text-white text-center position-relative heading py-4 accordion-body section-padding">Our
+                Products</h3>
+            <div class="row mt-5 gy-3 gy-md-0">
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="card productcard" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000">
+                        <div class="card-body">
+                            <h5 class="text-semimain text-center subheading position-relative normal">ERP & CMS Systems
+                            </h5>
+                            <p class="mt-4 text-light small text-center">Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Cupiditate doloremque quos odit hic? Placeat inventore odit corporis
+                                excepturi, quas maiores vel, aliquid sed earum iusto iste quasi. Nisi, voluptatum unde!
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="card productcard" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">
+                        <div class="card-body">
+                            <h5 class="text-semimain text-center subheading position-relative normal">Custom POS
+                                Software</h5>
+                            <p class="mt-4 text-light small text-center">Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Cupiditate doloremque quos odit hic? Placeat inventore odit corporis
+                                excepturi, quas maiores vel, aliquid sed earum iusto iste quasi. Nisi, voluptatum unde!
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="card productcard" data-aos="fade-up" data-aos-offset="250" data-aos-duration="1000">
+                        <div class="card-body">
+                            <h5 class="text-semimain text-center subheading position-relative normal">ECommerce
+                                Application
+                            </h5>
+                            <p class="mt-4 text-light small text-center">Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Cupiditate doloremque quos odit hic? Placeat inventore odit corporis
+                                excepturi, quas maiores vel, aliquid sed earum iusto iste quasi. Nisi, voluptatum unde!
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="card productcard" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
+                        <div class="card-body">
+                            <h5 class="text-semimain text-center subheading position-relative normal">Food delivery
+                                application
+                            </h5>
+                            <p class="mt-4 text-light small text-center">Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Cupiditate doloremque quos odit hic? Placeat inventore odit corporis
+                                excepturi, quas maiores vel, aliquid sed earum iusto iste quasi. Nisi, voluptatum unde!
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="counter">
+        <div class="px-sm-5 text-center py-3">
+            <h3 class="text-dark position-relative heading pt-3">Our Acheivements</h3>
+            <p class="mt-3 px-sm-5 text-secondary normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                odit provident adipisci aperiam tempore exercitationem harum accusamus itaque consectetur soluta.</p>
+        </div>
+
+        <div class="bg-counter mt-5 position-relative">
+            <div class="overlay">
+                <div class="container px-5 section-padding">
+                    <div class="row mx-0 g-3 g-md-5">
+                        <div class="col-md-3 col-6 text-center">
+                            <div class="count-up border-bottom text-white fs-1 fw-bold mb-3 pb-2 count-completed"
+                                id="number1" max-counter="1280">35</div>
+                            <p class="text-uppercase text-white small">Happy Clients</p>
+                        </div>
+                        <div class="col-md-3 col-6 text-center">
+                            <div class="count-up border-bottom text-white fs-1 fw-bold mb-3 pb-2 count-completed"
+                                id="number2" max-counter="920">47</div>
+                            <p class="text-uppercase text-white small">Projects Completed</p>
+                        </div>
+                        <div class="col-md-3 col-6 text-center">
+                            <div class="count-up border-bottom text-white fs-1 fw-bold mb-3 pb-2 count-completed"
+                                id="number3" max-counter="1250">3.5</div>
+                            <p class="text-uppercase text-white small">Project Bid Ranking</p>
+                        </div>
+                        <div class="col-md-3 col-6 text-center">
+                            <div class="count-up border-bottom text-white fs-1 fw-bold mb-3 pb-2 count-completed"
+                                id="number4" max-counter="1200">1200</div>
+                            <p class="text-uppercase text-white small">Activity reporting</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="testimonial" class="testimonial  position-relative">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 d-none d-lg-block">
+                    <ol class="carousel-indicators tabs elcheck">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active">
+                            <div class="text-center">
+                                <img width="130px" height="130px"
+                                    class="object-fit-contain px-2  rounded-circle bg-client"
+                                    src="/img/clients/alpha.png" alt="">
+                            </div>
+                        </li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1">
+                            <div class="text-center">
+                                <img width="130px" height="130px"
+                                    class="object-fit-contain px-2 rounded-circle bg-client"
+                                    src="/img/clients/bitinfo.png" alt="">
+                            </div>
+                        </li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2">
+                            <div class="text-center">
+                                <img width="130px" height="130px"
+                                    class="object-fit-contain px-2 rounded-circle bg-client"
+                                    src="/img/clients/winsoft.png" alt="">
+                            </div>
+                        </li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3">
+                            <div class="text-center">
+                                <img width="130px" height="130px"
+                                    class="object-fit-contain px-2 rounded-circle bg-client"
+                                    src="/img/clients/kincho.png" alt="">
+                            </div>
+                        </li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4">
+                            <div class="text-center">
+                                <img width="130px" height="130px"
+                                    class="object-fit-contain px-2 rounded-circle bg-client"
+                                    src="/img/clients/marathimetro.png" alt="">
+                            </div>
+                        </li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5">
+                            <div class="text-center">
+                                <img width="130px" height="130px"
+                                    class="object-fit-contain px-2 rounded-circle bg-client"
+                                    src="/img/clients/webcrawler.png" alt="">
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <div id="carouselExampleIndicators" data-interval="false" class="carousel slide"
+                        data-ride="carousel">
+                        <h3>WHAT OUR CLIENTS SAY</h3>
+                        <h2 class="">TESTIMONIALS</h2>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="quote-wrapper">
+                                    <p>I have tried a lot of food delivery services but Plate is something out of this
+                                        world! Their food is really healthy and it tastes great, which is why I
+                                        recommend this company to all my friends!</p>
+                                    <h3>peter lee 1</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="quote-wrapper">
+                                    <p>I have tried a lot of food delivery services but Plate is something out of this
+                                        world! Their food is really healthy and it tastes great, which is why I
+                                        recommend this company to all my friends!</p>
+                                    <h3>peter lee 2</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="quote-wrapper">
+                                    <p>I have tried a lot of food delivery services but Plate is something out of this
+                                        world! Their food is really healthy and it tastes great, which is why I
+                                        recommend this company to all my friends!</p>
+                                    <h3>peter lee 3</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="quote-wrapper">
+                                    <p>I have tried a lot of food delivery services but Plate is something out of this
+                                        world! Their food is really healthy and it tastes great, which is why I
+                                        recommend this company to all my friends!</p>
+                                    <h3>peter lee 4</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="quote-wrapper">
+                                    <p>I have tried a lot of food delivery services but Plate is something out of this
+                                        world! Their food is really healthy and it tastes great, which is why I
+                                        recommend this company to all my friends!</p>
+                                    <h3>peter lee 5</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="quote-wrapper">
+                                    <p>I have tried a lot of food delivery services but Plate is something out of this
+                                        world! Their food is really healthy and it tastes great, which is why I
+                                        recommend this company to all my friends!</p>
+                                    <h3>peter lee 6</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <ol class="carousel-indicators indicators">
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark my-5 py-5">
+        <div class="container px-2">
+            <div class="row g-3 align-items-center">
+                <div class="col-md-6 col-sm-12">
+                    <div class="">
+                        <h1 class="display-6 text-main fw-semibold">Few Reasons Why People Choosing Us !</h1>
+                        <p class="text-light normal mt-3" style="letter-spacing: 0.6px;">We're a forward-thinking
+                            technological company specializing in software development and digital marketing. Renowned
+                            for our innovative solutions, we're trusted partners for businesses seeking custom software
+                            and impactful digital marketing strategies. Our focus on quality and excellence sets us
+                            apart, empowering clients with user-friendly software and cutting-edge digital campaigns.
+                            We're dedicated to driving positive change and enhancing client success through our
+                            technological expertise. With a commitment to staying at the forefront of the industry,
+                            we're shaping the future of technology and revolutionizing digital landscapes."</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="row  align-items-center g-4">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12">
+                                    <div class="card box  p-2">
+
+                                        <div class="card-body">
+                                            <i class="fas fa-check fa-2x"></i>
+                                            <h5>Customization</h5>
+                                            <p class="small"> Showcase testimonials or case studies from satisfied
+                                                clients to demonstrate your track record of delivering successful
+                                                projects. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card box  p-2">
+
+                                        <div class="card-body">
+                                            <i class="fas fa-check fa-2x"></i>
+                                            <h5>Client Satisfaction</h5>
+                                            <p class="small">Emphasize your ability to tailor software and websites to
+                                                meet the specific needs and preferences of each client.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card box  p-2">
+                                <div class="card-body">
+                                    <i class="fas fa-check fa-2x"></i>
+                                    <h5>Dedicated Support Team</h5>
+                                    <p class="small"> Showcase your dedicated team of support professionals who are
+                                        knowledgeable and responsive to client inquiries and technical issues. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="py-3" id="talksection">
+
+    </div>
+    <section class="my-5">
+        <div class="container">
+            <h3 class="text-dark text-center position-relative heading pt-3">
+                Have a project in mind?
+            </h3>
+            <p class="text-secondary text-center large fw-normal my-4">Book a free consultation now</p>
+
+            <div class="row px-2 px-md-0 g-3">
+                <div class="col-md-6 col-sm-12 col-12">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control floatinput" id="floatingInput"
+                            placeholder="text@example.com">
+                        <label for="floatingInput" class="normal text-secondary">First name</label>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-sm-12 col-12">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control floatinput" id="floatingInput"
+                            placeholder="name@example.com">
+                        <label for="floatingInput" class="normal text-secondary">Email</label>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-12">
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control floatinput" id="floatingInput"
+                            placeholder="name@example.com">
+                        <label for="floatingInput" class="normal text-secondary">Phone</label>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-12">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control floatinput" id="floatingInput"
+                            placeholder="name@example.com">
+                        <label for="floatingInput" class="normal text-secondary">Organization</label>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-floating">
+                        <textarea class="form-control floatinput" placeholder="Leave a comment here"
+                            id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2 " class="text-secondary normal">Message</label>
+                    </div>
+                </div>
+            </div>
+            <button class="btn formsubmitbtn">Send</button>
+
+        </div>
+    </section>
+
+
+    <footer class="bg-dark text-white normal">
+
+        <div class="bg-semidark">
+            <div class="container">
+
+                <div class="row py-4 d-flex align-items-center">
+
+                    <div class="col-md-6 col-lg-5 text-center text-md-start mb-4 mb-md-0">
+                        <h6 class="mb-0 ">Get connected with us on social networks!</h6>
+                    </div>
+
+                    <div class="col-md-6 col-lg-7 text-center text-md-end">
+                        <div
+                            class="col-sm-4 d-flex flex-nowrap align-items-center justify-content-center w-100 justify-content-sm-end">
+                            <button type="button" class="btn btn-sm btn-primary rounded-circle fbbtn btn-floating mx-1">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+                            <button type="button" class="btn btn-sm btn-info rounded-circle btn-floating mx-1">
+                                <i class="fab fa-twitter text-white"></i>
+                            </button>
+                            <button type="button"
+                                class="btn btn-sm btn-danger rounded-circle instabtn btn-floating mx-1">
+                                <i class="fab fa-instagram"></i>
+                            </button>
+                            <button type="button"
+                                class="btn btn-sm btn-primary rounded-circle linkdinbtn btn-floating mx-1">
+                                <i class="fab fa-linkedin-in"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container text-center text-md-left mt-5">
+
+            <div class="row mt-3 dark-grey-text">
+
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                    <a class="navbar-brand" href="">
+                        <img src="/img/logo.png" class="img-fluid" width="190px" alt="">
+                    </a>
+
+                    <p class="mt-4">Here you can use rows and columns to organize your footer content. Lorem ipsum dolor
+                        sit amet,
+                        consectetur
+                        adipisicing elit.</p>
+
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <h6 class="text-uppercase  font-weight-bold">Products</h6>
+                    <hr class="mb-4 mt-2 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a class="nav-link small" href="#!">ERP & CMS systems</a>
+                    </p>
+                    <p>
+                        <a class="nav-link small" href="#!">Custom pos software</a>
+                    </p>
+
+                    <p>
+                        <a class="nav-link small" href="#!">ECommerce applications</a>
+                    </p>
+                    <p>
+                        <a class="nav-link small" href="#!">Food delivery applications</a>
+                    </p>
+
+
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <h6 class="text-uppercase  font-weight-bold">Useful links</h6>
+                    <hr class="mb-4 mt-2 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a class="nav-link" href="#!">IT services</a>
+                    </p>
+                    <p>
+                        <a class="nav-link" href="#!">IT training</a>
+                    </p>
+                    <p>
+                        <a class="nav-link" href="#!">Digital marketing</a>
+                    </p>
+                    <p>
+                        <a class="nav-link" href="#!">Contact</a>
+                    </p>
+
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <h6 class="text-uppercase  font-weight-bold">Contact</h6>
+                    <hr class="mb-4 mt-2 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-home mr-3"></i> New York, NY 10012, US
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> info@example.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> + 01 234 567 88
+                    </p>
+                    <p>
+                        <i class="fas fa-print mr-3"></i> + 01 234 567 89
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="text-center d-flex justify-content-center border-1 border-top border-secondary py-4">
+            © 2024 Copyright :
+            <a class="nav-link ms-2" href="https://mdbootstrap.com/">Increditex Software Solutions Pvt.Ltd</a>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/main.js"></script>
+
+    <script>
+        // Check if the animation has already played
+        const hasAnimationPlayed = localStorage.getItem('animationPlayed');
+
+        // Function to play the animation
+        function playAnimation() {
+            const mainheading = document.querySelector('.mainheading');
+            mainheading.style.animation = 'backspaceTyping 6s steps(40) 1s 1 normal forwards';
+
+            // Set the flag in localStorage to indicate the animation has played
+            localStorage.setItem('animationPlayed', true);
+        }
+
+        // Play the animation only if it hasn't played before
+        if (!hasAnimationPlayed) {
+            // Call the playAnimation function after a delay (e.g., 100 milliseconds)
+            setTimeout(playAnimation, 100);
+        }
+
+
+    </script>
+    <script>
+        function startCounter(element, endValue, duration) {
+            $({ count: 0 }).animate({ count: endValue }, {
+                duration: duration,
+                easing: 'swing',
+                step: function () {
+                    var mathCount = Math.ceil(this.count);
+                    $(element).text(mathCount);
+                },
+                complete: function () {
+                    // You can add additional completion logic here if needed
+                }
+            });
+        }
+
+        // Function to handle the intersection observer callback
+        function handleIntersection(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+
+                    startCounter('#number1', 100, 3000);
+                    startCounter('#number2', 60, 3000);
+                    startCounter('#number3', 50, 3000);
+                    startCounter('#number4', 300, 3000);
+
+
+                    observer.disconnect();
+                }
+            });
+        }
+
+
+        var observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+
+
+        var target = document.querySelector('.bg-counter');
+        observer.observe(target);
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var servicesDropdown = document.getElementById("servicesDropdown");
+
+            servicesDropdown.addEventListener("click", function () {
+                servicesDropdown.classList.toggle("active");
+            });
+        });
+    </script>
+    <script>
+        AOS.init({ once: true });
+    </script>
+</body>
+
+</html>
