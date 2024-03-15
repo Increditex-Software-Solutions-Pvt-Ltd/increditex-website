@@ -427,3 +427,13 @@ h6 {
         transform: rotate(405deg);
     }
 }
+.sidebar{
+    background-color: rgba(0, 0, 0, 0.89);
+}
+  .sidenav a{
+    color: white !important;
+    font-size: 15px !important;
+  }
+  .sidenav a.active{
+    color: var(--main-color) !important;
+  }
