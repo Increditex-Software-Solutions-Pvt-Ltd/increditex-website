@@ -16,6 +16,17 @@
 </head>
 
 <body>
+  <div class="preloader">
+    <div class="preloader-block">
+        <div class="preloader-icon" style="display: none;">
+            <div class="ring">
+                <img src="/img/mainlogo.png" class="img-fluid animate__animated animate__flip" width="80px" alt="">
+                <span class="loader"></span>
+            </div>
+        </div>
+
+    </div>
+</div>
   <nav class="navbar navbar-expand-lg  position-sticky top-0 z9 py-3">
     <div class="container d-flex justify-content-between align-items-center">
         <div class="logo">
@@ -71,10 +82,10 @@
       <div class="container top-padding">
         <div class="bannerContent text-center text-md-end">
           <div class="descover py-3">
-            <h2 class="py-3 text-semimain" style="font-size: 35px; letter-spacing: 1.3px;" data-aos="fade-left"
+            <h2 class="py-3 text-semimain tagline" style="font-size: 35px; letter-spacing: 1.3px;" data-aos="fade-up"
               data-aos-duration="800">We Innovate , <span class="text-main">We Create</span>,<br> We Deliver</h2>
           </div>
-          <p class="text-semimain py-3" data-aos="fade-left" data-aos-duration="1300">Your Trusted IT Services and
+          <p class="text-semimain py-3" data-aos="fade-up" data-aos-duration="1300">Your Trusted IT Services and
             Consultancy Partner!!</p>
         </div>
       </div>
@@ -458,6 +469,7 @@ achieve their digital objectives.
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="/main.js"></script>
   <script>
     $(document).ready(function () {
       $(".testimonial .indicators li").click(function () {

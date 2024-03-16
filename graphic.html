@@ -16,6 +16,17 @@
 </head>
 
 <body>
+  <div class="preloader">
+    <div class="preloader-block">
+        <div class="preloader-icon" style="display: none;">
+            <div class="ring">
+                <img src="/img/mainlogo.png" class="img-fluid animate__animated animate__flip" width="80px" alt="">
+                <span class="loader"></span>
+            </div>
+        </div>
+
+    </div>
+</div>
   <nav class="navbar navbar-expand-lg  position-sticky top-0 z9 py-3">
     <div class="container d-flex justify-content-between align-items-center">
         <div class="logo">
@@ -71,11 +82,11 @@
       <div class="container top-padding">
         <div class="bannerContent text-center text-md-end">
           <div class="descover py-3">
-            <h2 class="py-3 text-semimain" style="font-size: 35px; letter-spacing: 1.3px;" data-aos="fade-left"
+            <h2 class="py-3 text-semimain tagline" style="font-size: 35px; letter-spacing: 1.3px;" data-aos="fade-up"
               data-aos-duration="800">We Discover , <span class="text-main">We Design</span>,<br> We
               Execute</h2>
           </div>
-          <p class="text-semimain py-3" data-aos="fade-left" data-aos-duration="1300">Futuristic web solutions for
+          <p class="text-semimain py-3" data-aos="fade-up" data-aos-duration="1300">Futuristic web solutions for
             complex business challenges!!</p>
         </div>
       </div>
@@ -128,13 +139,6 @@
               <span class="m-0 medium">
                 <img src="" class="" alt="">
                 Web Design
-              </span>
-            </button><button class="nav-link w-100 d-flex align-items-center text-start border p-4 py-3 mb-2"
-              data-bs-toggle="pill" data-bs-target="#tab-pane-5" type="button" aria-selected="false" tabindex="-1"
-              role="tab">
-              <span class="m-0 medium">
-                <img src="" class="" alt="">
-                Design System Development
               </span>
             </button>
           </div>
@@ -232,29 +236,7 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="tab-pane-5" role="tabpanel">
-              <div class="row g-4">
-                <div class="col-md-6">
-                  <div class="position-relative">
-                    <img class="object-fit-cover rounded img-fluid" src="/img/webservices/emailmarket.jpeg" alt=""
-                      style="height: 280px;">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <h4 class="mb-4">Design System Development</h4>
-                  <p class="mb-4 normal">Consistency is key to establishing a strong brand identity and ensuring a cohesive
-                    user experience across your digital products. Our design system development
-                    services help you create and maintain a comprehensive set of design guidelines,
-                    components, and patterns that streamline the design process and promote brand
-                    consistency. From design libraries and style guides to component libraries and
-                    pattern libraries, we provide the framework and tools you need to ensure that every
-                    interaction with your brand feels familiar, intuitive, and on-brand.
-
-
-
-                </div>
-              </div>
-            </div>
+          
             
 
           </div>
@@ -264,7 +246,19 @@
     </div>
   </section>
 
-
+  <section class="my-5">
+    <div class="graphicbannerSection p-5">
+       <div class="container pt-3">
+        <h3 class="text-main display-5 fw-normal">Ready to Get Started?.</h3>
+        <p class="text-light mt-4">Whether you're embarking on a new UI/UX(Graphic) design development project or seeking to enhance
+          your existing online presence, <span class="text-main">Increditex Software Solutions</span> is here to help!</p>
+         <div class="mt-5">
+           <button class="btn contactbtn p-3 fs-6">Contact</button>
+         </div>
+       </div>
+     
+    </div>
+</section>
   <footer class="bg-dark text-white normal">
 
     <div class="bg-semidark">
@@ -383,7 +377,7 @@
     </div>
 
   </footer>
-  div class="offcanvas offcanvas-start sidebar" id="sidebar">
+  <div class="offcanvas offcanvas-start sidebar" id="sidebar">
 
     <div class="offcanvas-body">
         <div class="text-end">
@@ -436,6 +430,7 @@
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="/main.js"></script>
   <script>
     $(document).ready(function () {
       $(".testimonial .indicators li").click(function () {

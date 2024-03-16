@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Increditex</title>
-    <link rel="icon" href="/img/mainlogo.png">
+  <link rel="icon" href="/img/mainlogo.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -16,54 +16,65 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg  position-sticky top-0 z9 py-3">
-    <div class="container d-flex justify-content-between align-items-center">
-        <div class="logo">
-            <a href="/index.html" class="navbar-brand">
-                <img src="/img/logo.png" width="180px" class="img-fluid" alt="">
-            </a>
-        </div>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
-            <span>
-                <i class="bi bi-list text-white" style="font-size: 30px;"></i>
-            </span>
-        </button>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                <li class="nav-item mx-3">
-                    <a class="nav-link navbarlinks normal" aria-current="page" href="/index.html">Home</a>
-                </li>
-                <li class="nav-item mx-3">
-                    <a class="nav-link navbarlinks normal" href="/about.html">About</a>
-                </li>
-
-                <li class="nav-item dropdown" id="servicesDropdown">
-                    <a class="nav-link active navbarlinks normal dropdown-toggle" href="#" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Services
-                    </a>
-                    <ul class="dropdown-menu animate__animated animate__flipInY animate__fast">
-                        <li><a class="dropdown-item py-2" href="/web.html">Web Development
-                            </a></li>
-                        <li><a class="dropdown-item py-2" href="/app.html">App Development
-                            </a></li>
-                        <li><a class="dropdown-item py-2" href="/ittraining.html">IT Training & Learning</a></li>
-                        <li><a class="dropdown-item py-2" href="/graphic.html">Graphic ,UI & UX Designing
-                            </a></li>
-                        <li><a class="dropdown-item py-2" href="/digital.html">Digital Marketing
-                            </a></li>
-                    </ul>
-                </li>
-                <li class="nav-item mx-3">
-                    <a class="nav-link navbarlinks normal" href="/team.html">Team</a>
-                </li>
-
-            </ul>
-            <a class="contactbtn" href="/contact.html">Contact us</a>
+  <div class="preloader">
+    <div class="preloader-block">
+        <div class="preloader-icon" style="display: none;">
+            <div class="ring">
+                <img src="/img/mainlogo.png" class="img-fluid animate__animated animate__flip" width="80px" alt="">
+                <span class="loader"></span>
+            </div>
         </div>
 
     </div>
-</nav>
+</div>
+  <nav class="navbar navbar-expand-lg  position-sticky top-0 z9 py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <a href="/index.html" class="navbar-brand">
+          <img src="/img/logo.png" width="180px" class="img-fluid" alt="">
+        </a>
+      </div>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+        <span>
+          <i class="bi bi-list text-white" style="font-size: 30px;"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-3">
+            <a class="nav-link navbarlinks normal" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link navbarlinks normal" href="/about.html">About</a>
+          </li>
+
+          <li class="nav-item dropdown" id="servicesDropdown">
+            <a class="nav-link active navbarlinks normal dropdown-toggle" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu animate__animated animate__flipInY animate__fast">
+              <li><a class="dropdown-item py-2" href="/web.html">Web Development
+                </a></li>
+              <li><a class="dropdown-item py-2" href="/app.html">App Development
+                </a></li>
+              <li><a class="dropdown-item py-2" href="/ittraining.html">IT Training & Learning</a></li>
+              <li><a class="dropdown-item py-2" href="/graphic.html">Graphic ,UI & UX Designing
+                </a></li>
+              <li><a class="dropdown-item py-2" href="/digital.html">Digital Marketing
+                </a></li>
+            </ul>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link navbarlinks normal" href="/team.html">Team</a>
+          </li>
+
+        </ul>
+        <a class="contactbtn" href="/contact.html">Contact us</a>
+      </div>
+
+    </div>
+  </nav>
 
 
   <div class="bg-training m-top">
@@ -71,10 +82,11 @@
       <div class="container top-padding">
         <div class="bannerContent text-center text-md-end">
           <div class="descover py-3">
-            <h2 class="py-3 text-semimain" style="font-size: 35px; letter-spacing: 1.3px;" data-aos="fade-left"
+            <h2 class="py-3 text-semimain tagline" style="letter-spacing: 1.3px;" data-aos="fade-up"
               data-aos-duration="800">Empowering Minds,<span class="text-main">Shaping Futures</span></h2>
           </div>
-          <p class="text-semimain py-3" data-aos="fade-left" data-aos-duration="1300">Your Ultimate Destination for Comprehensive IT Training Solutions.</p>
+          <p class="text-semimain py-3" data-aos="fade-up" data-aos-duration="1300">Your Ultimate Destination for
+            Comprehensive IT Training Solutions.</p>
         </div>
       </div>
     </div>
@@ -82,7 +94,10 @@
   </div>
 
   <div class="container medium text-dark py-2 mt-5" style="text-align: justify;">
-    At Increditex Software Solutions Pvt. Ltd., we excel in providing comprehensive IT training and learning solutions designed to empower individuals and organizations with the skills and knowledge needed to succeed in today's rapidly evolving technology landscape. With a focus on practical application and hands-on learning, we offer a diverse range of courses and programs tailored to meet the unique needs and objectives of our clients.
+    At Increditex Software Solutions Pvt. Ltd., we excel in providing comprehensive IT training and learning solutions
+    designed to empower individuals and organizations with the skills and knowledge needed to succeed in today's rapidly
+    evolving technology landscape. With a focus on practical application and hands-on learning, we offer a diverse range
+    of courses and programs tailored to meet the unique needs and objectives of our clients.
 
 
   </div>
@@ -116,25 +131,18 @@
 
               </span>
             </button><button class="nav-link w-100 d-flex align-items-center text-start border p-4 py-3 mb-2"
-              data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button" aria-selected="false" role="tab"
-              tabindex="-1">
-              <span class="m-0 medium">
-                <img src="" class="" alt="">
-                Cutting-Edge Curriculum
-              </span>
-            </button><button class="nav-link w-100 d-flex align-items-center text-start border p-4 py-3 mb-2"
               data-bs-toggle="pill" data-bs-target="#tab-pane-5" type="button" aria-selected="false" tabindex="-1"
               role="tab">
               <span class="m-0 medium">
                 <img src="" class="" alt="">
-                Flexible Learning Options
+                Courses for Job Opportunities
               </span>
             </button><button class="nav-link w-100 d-flex align-items-center text-start border p-4 py-3 mb-2"
               data-bs-toggle="pill" data-bs-target="#tab-pane-6" type="button" aria-selected="false" tabindex="-1"
               role="tab">
               <span class="m-0 medium">
                 <img src="" class="" alt="">
-                Analytics and Reporting
+                Daily Assignments and Guidance
 
 
               </span>
@@ -147,13 +155,17 @@
               <div class="row g-4">
                 <div class="col-md-6">
                   <div class="position-relative">
-                    <img class="object-fit-cover rounded img-fluid" src="/img/webservices/seo.avif" alt=""
+                    <img class="object-fit-cover rounded img-fluid" src="/img/webservices/experts.png" alt=""
                       style="height: 280px; width: 100%;">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <h4 class="mb-4">Expert Instruction</h4>
-                  <p class="mb-4 normal">Our team of experienced instructors brings industry expertise and real-world insights to every training session, ensuring that participants gain practical skills and knowledge that are directly applicable to their roles and responsibilities. From beginner to advanced levels, our courses cover a wide array of IT topics, including programming languages, cloud computing, cybersecurity, data science, and more.
+                  <p class="mb-4 normal">Our team of experienced instructors brings industry expertise and real-world
+                    insights to every training session, ensuring that participants gain practical skills and knowledge
+                    that are directly applicable to their roles and responsibilities. From beginner to advanced levels,
+                    our courses cover a wide array of IT topics, including programming languages, cloud computing,
+                    cybersecurity, data science, and more.
 
                 </div>
               </div>
@@ -162,14 +174,18 @@
               <div class="row g-4">
                 <div class="col-md-6">
                   <div class="position-relative">
-                    <img class="object-fit-cover rounded img-fluid" src="/img/webservices/content.jpg" alt=""
+                    <img class="object-fit-cover rounded img-fluid" src="/img/webservices/goodenviorment.avif" alt=""
                       style="height: 280px;">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <h4 class="mb-4">Interactive Learning Environment
                   </h4>
-                  <p class="mb-4 normal">We believe that active engagement is key to effective learning. That's why we foster an interactive and collaborative learning environment where participants can engage with instructors and peers, ask questions, and participate in hands-on exercises and projects. Our goal is to create an immersive learning experience that inspires curiosity, promotes critical thinking, and encourages continuous skill development.
+                  <p class="mb-4 normal">We believe that active engagement is key to effective learning. That's why we
+                    foster an interactive and collaborative learning environment where participants can engage with
+                    instructors and peers, ask questions, and participate in hands-on exercises and projects. Our goal
+                    is to create an immersive learning experience that inspires curiosity, promotes critical thinking,
+                    and encourages continuous skill development.
 
                 </div>
               </div>
@@ -178,43 +194,36 @@
               <div class="row g-4">
                 <div class="col-md-6">
                   <div class="position-relative">
-                    <img class="object-fit-cover rounded img-fluid" src="/img/webservices/socialmediamarket.jpg" alt=""
-                      style="height: 280px;">
+                    <img class="object-fit-cover rounded img-fluid" src="/img/webservices/customizedtrain.webp" alt=""
+                      style="height: 280px;width: 100%;">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <h4 class="mb-4">Customized Training Solutions</h4>
-                  <p class="mb-4 normal">We understand that every organization has unique training needs and objectives. That's why we offer customizable training solutions tailored to the specific requirements of our clients. Whether you're looking to upskill your team, onboard new employees, or address specific skill gaps within your organization, we work closely with you to design and deliver training programs that align with your goals and objectives.
+                  <p class="mb-4 normal">We understand that every organization has unique training needs and objectives.
+                    That's why we offer customizable training solutions tailored to the specific requirements of our
+                    clients. Whether you're looking to upskill your team, onboard new employees, or address specific
+                    skill gaps within your organization, we work closely with you to design and deliver training
+                    programs that align with your goals and objectives.
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="tab-pane-4" role="tabpanel">
-              <div class="row g-4">
-                <div class="col-md-6">
-                  <div class="position-relative">
-                    <img class="object-fit-cover rounded img-fluid" src="/img/webservices/ppc.avif" alt=""
-                      style="height: 280px;">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <h4 class="mb-4"> Cutting-Edge Curriculum</h4>
-                  <p class="mb-4 normal">Our training curriculum is continuously updated to reflect the latest trends, technologies, and best practices in the IT industry. We leverage cutting-edge instructional design methodologies and learning resources to ensure that our courses remain relevant, engaging, and effective. Whether you're seeking foundational knowledge or advanced expertise, our curriculum is designed to help you stay ahead of the curve and achieve your learning goals.
 
-
-                </div>
-              </div>
-            </div>
             <div class="tab-pane fade" id="tab-pane-5" role="tabpanel">
               <div class="row g-4">
                 <div class="col-md-6">
                   <div class="position-relative">
-                    <img class="object-fit-cover rounded img-fluid" src="/img/webservices/emailmarket.jpeg" alt=""
+                    <img class="object-fit-fill rounded img-fluid" src="/img/webservices/couses.png" alt=""
                       style="height: 280px;">
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <h4 class="mb-4">Flexible Learning Options</h4>
-                  <p class="mb-4 normal">We understand that everyone's schedule is different. That's why we offer flexible learning options to accommodate diverse learning preferences and constraints. Whether you prefer instructor-led classroom sessions, live virtual training, self-paced online courses, or a blended learning approach, we have options to suit your needs. Our flexible delivery formats ensure that you can access high-quality training wherever you are, whenever you need it.
+                  <h4 class="mb-4">Courses for Job Opportunities</h4>
+                  <p class="mb-4 normal">We offer a comprehensive range of courses designed to prepare participants for
+                    job opportunities in the IT industry. From basic to advanced levels, our courses cover essential
+                    skills and technologies that are in high demand in today's job market. Whether you're aspiring to
+                    become a software developer, network engineer, data analyst, or cybersecurity specialist, we provide
+                    the training and resources you need to succeed in your desired career path.
 
 
 
@@ -225,21 +234,19 @@
               <div class="row g-4">
                 <div class="col-md-6">
                   <div class="position-relative">
-                    <img class="object-fit-cover rounded img-fluid" src="/img/webservices/analytics.jpeg" alt=""
+                    <img class="object-fit-cover rounded img-fluid" src="/img/webservices/guidence.avif" alt=""
                       style="height: 280px;">
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <h4 class="mb-4">Analytics and Reporting
+                  <h4 class="mb-4">Daily Assignments and Guidance
                   </h4>
-                  <p class="mb-4 normal">Data-driven decision-making is key to success in digital marketing, and our
-                    analytics
-                    and reporting services provide valuable insights into your campaign performance
-                    and customer behavior. We track key metrics, analyze trends, and measure the
-                    impact of your marketing efforts across channels to identify opportunities for
-                    optimization and improvement. With transparent and actionable reporting, we keep
-                    you informed and empowered to make informed decisions that drive business
-                    growth.
+                  <p class="mb-4 normal">To enhance learning outcomes and reinforce concepts, we provide daily
+                    assignments and well-guided assistance to our participants. These assignments are carefully crafted
+                    to complement the course material and encourage practical application of learned skills. Our
+                    instructors are readily available to provide guidance, clarification, and support throughout the
+                    learning journey, ensuring that participants receive personalized attention and assistance whenever
+                    needed.
 
 
                 </div>
@@ -253,7 +260,35 @@
     </div>
   </section>
 
+  <section class="my-5">
+    <div class="trainingbannerSection p-5">
+      <div class="container pt-3">
+        <h3 class="text-main display-5 fw-normal">Ready to Level Up Your Skills?.</h3>
+        <p class="text-light mt-4">Whether you're diving into the world of IT for the first time or aiming to advance
+          your expertise, <span class="text-main">Increditex Software Solutions</span> is your perfect solution on the
+          journey to success!"
+        </p>
+        <div class="mt-5">
+          <button class="btn-53" data-bs-toggle="modal" data-bs-target="#enquiryform">
+            <div class="original">ENQUIRY</div>
+            <div class="letters">
 
+              <span>E</span>
+              <span>N</span>
+              <span>Q</span>
+              <span>U</span>
+              <span>I</span>
+              <span>R</span>
+              <span>Y</span>
+
+            </div>
+          </button>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <footer class="bg-dark text-white normal">
 
@@ -373,59 +408,104 @@
     </div>
 
   </footer>
+  <div class="modal fade" id="enquiryform">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title">Enquire now for special offer</h6>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form action="" class="row g-2">
+            <div class="col-md-6">
+              <label for="" class="form-label normal">Name</label>
+              <input type="text" class="form-control shadow-none">
+            </div>
+            <div class="col-md-6">
+              <label for="" class="form-label normal">Email</label>
+              <input type="text" class="form-control shadow-none">
+            </div>
+            <div class="col-md-6">
+              <label for="" class="form-label normal">Mobile</label>
+              <input type="text" class="form-control shadow-none">
+            </div>
+            <div class="col-md-6">
+              <label for="" class="form-label normal">Course</label>
+              <select class="form-select shadow-none">
+                <option value="" selected disabled>Select Course</option>
+                <option value="">Web development</option>
+                <option value="">App development</option>
+                <option value="">UI/UX development</option>
+                <option value="">Digital marketing</option>
+              </select>
+            </div>
+            <div class="col-md-12">
+              <label for="" class="form-label normal">Message</label>
+              <textarea class="form-control shadow-none"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-dark" type="submit">SUBMIT</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
   <div class="offcanvas offcanvas-start sidebar" id="sidebar">
 
     <div class="offcanvas-body">
-        <div class="text-end">
-            <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
-        </div>
+      <div class="text-end">
+        <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+      </div>
 
-        <div class="pt-3">
-            <ul class="list-unstyled text-center fs-6">
-                <li class="nav-item sidenav py-3">
-                    <a title="home" href="/index.html" class="nav-link active">Home</a>
-                </li>
-                <li class="nav-item sidenav py-3">
-                    <a title="about" href="/about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item sidenav dropdown" id="servicesDropdown">
-                    <a title="services" class="nav-link  sidenav text-white py-3 normal dropdown-toggle"
-                        href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Services
-                    </a>
-                    <ul class="dropdown-menu animate__animated animate__flipInY animate__fast">
-                        <li><a class="dropdown-item py-2" href="/web.html">Web Development
-                            </a></li>
-                        <li><a class="dropdown-item py-2" href="/app.html">App Development
-                            </a></li>
-                        <li><a class="dropdown-item py-2" href="/ittraining.html">IT Training & Learning</a></li>
-                        <li><a class="dropdown-item py-2" href="/graphic.html">Graphic ,UI & UX Designing
-                            </a></li>
-                        <li><a class="dropdown-item py-2" href="/digital.html">Digital Marketing
-                            </a></li>
-                    </ul>
-                </li>
-
-
-                <li class="nav-item sidenav py-3">
-                    <a title="clients" href="/team.html" class="nav-link">Team</a>
-                </li>
-                <li class="nav-item sidenav py-3">
-                    <a title="gallery" href="/contact.html" class="nav-link">Contact</a>
-                </li>
-
-               
+      <div class="pt-3">
+        <ul class="list-unstyled text-center fs-6">
+          <li class="nav-item sidenav py-3">
+            <a title="home" href="/index.html" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item sidenav py-3">
+            <a title="about" href="/about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item sidenav dropdown" id="servicesDropdown">
+            <a title="services" class="nav-link  sidenav text-white py-3 normal dropdown-toggle" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu animate__animated animate__flipInY animate__fast">
+              <li><a class="dropdown-item py-2" href="/web.html">Web Development
+                </a></li>
+              <li><a class="dropdown-item py-2" href="/app.html">App Development
+                </a></li>
+              <li><a class="dropdown-item py-2" href="/ittraining.html">IT Training & Learning</a></li>
+              <li><a class="dropdown-item py-2" href="/graphic.html">Graphic ,UI & UX Designing
+                </a></li>
+              <li><a class="dropdown-item py-2" href="/digital.html">Digital Marketing
+                </a></li>
             </ul>
+          </li>
 
 
-        </div>
+          <li class="nav-item sidenav py-3">
+            <a title="clients" href="/team.html" class="nav-link">Team</a>
+          </li>
+          <li class="nav-item sidenav py-3">
+            <a title="gallery" href="/contact.html" class="nav-link">Contact</a>
+          </li>
+
+
+        </ul>
+
+
+      </div>
     </div>
-</div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="/main.js"></script>
   <script>
     $(document).ready(function () {
       $(".testimonial .indicators li").click(function () {

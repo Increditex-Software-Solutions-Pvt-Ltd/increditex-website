@@ -229,7 +229,7 @@ h6 {
 
 .bg-about {
     background: url('./img/about.jpg');
-    height: 500px !important;
+    height: 550px !important;
     background-size: cover;
     background-position: right;
 }

@@ -16,6 +16,17 @@
 </head>
 
 <body>
+  <div class="preloader">
+    <div class="preloader-block">
+        <div class="preloader-icon" style="display: none;">
+            <div class="ring">
+                <img src="/img/mainlogo.png" class="img-fluid animate__animated animate__flip" width="80px" alt="">
+                <span class="loader"></span>
+            </div>
+        </div>
+
+    </div>
+</div>
   <nav class="navbar navbar-expand-lg  position-sticky top-0 z9 py-3">
     <div class="container d-flex justify-content-between align-items-center">
         <div class="logo">
@@ -339,6 +350,8 @@
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="/main.js"></script>
+
   <script>
     $(document).ready(function () {
       $(".testimonial .indicators li").click(function () {
