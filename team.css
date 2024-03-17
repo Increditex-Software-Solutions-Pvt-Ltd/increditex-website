@@ -377,6 +377,7 @@ h6 {
 
 .teamheadingcontent {
     top: 50%;
+    right: 100px;
 }
 
 
@@ -508,6 +509,14 @@ animation: blink 10s linear infinite;
 @media(max-width:417px){
     .box{
         display: none;
+    }
+    .teamheadingcontent{
+        right: 5px;
+    }
+}
+@media(max-width:500px){
+    .teamheadingcontent{
+        right: 20px;
     }
 }
 
