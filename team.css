@@ -35,7 +35,7 @@ h5 {
 }
 
 h6 {
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .x-small {
@@ -47,7 +47,7 @@ h6 {
 }
 
 .normal {
-    font-size: 14px;
+    font-size: 14px !important;
 }
 
 .medium {
@@ -505,7 +505,7 @@ animation: blink 10s linear infinite;
     left: 200px;
     animation: blink 13s linear infinite;
 }
-@media(max-width:400px){
+@media(max-width:417px){
     .box{
         display: none;
     }
@@ -538,7 +538,7 @@ animation: blink 10s linear infinite;
         height: 100%;
         width: 100%;
         background: white;
-        line-height: 200px;
+        /* line-height: 200px; */
         color: #03446A;
         text-align: center;
         font-size: 60px;
