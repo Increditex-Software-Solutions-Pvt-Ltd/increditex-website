@@ -1,586 +1,810 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Increditex</title>
+    <link rel="icon" href="/img/mainlogo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="team.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Increditex</title>
-    <link rel="icon" href="/img/mainlogo.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="team.css">
-</head>
-
-<body>
-  <div class="preloader">
-    <div class="preloader-block">
-        <div class="preloader-icon" style="display: none;">
-            <div class="ring">
-                <img src="/img/mainlogo.png" class="img-fluid animate__animated animate__flip" width="80px" alt="">
-                <span class="loader"></span>
-            </div>
+  <body>
+    <div class="preloader">
+      <div class="preloader-block">
+        <div class="preloader-icon" style="display: none">
+          <div class="ring">
+            <img
+              src="/img/mainlogo.png"
+              class="img-fluid animate__animated animate__flip"
+              width="80px"
+              alt=""
+            />
+            <span class="loader"></span>
+          </div>
         </div>
-
+      </div>
     </div>
-</div>
-   <nav class="navbar navbar-expand-lg  position-sticky top-0 z9 py-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="logo">
-                <a href="/index.html" class="navbar-brand">
-                    <img src="/img/logo.png" width="180px" class="img-fluid" alt="">
-                </a>
-            </div>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
-                <span>
-                    <i class="bi bi-list text-white" style="font-size: 30px;"></i>
-                </span>
-            </button>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item mx-3">
-                        <a class="nav-link navbarlinks normal" aria-current="page" href="/index.html">Home</a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link navbarlinks normal" href="/about.html">About</a>
-                    </li>
-
-                    <li class="nav-item dropdown" id="servicesDropdown">
-                        <a class="nav-link navbarlinks normal dropdown-toggle" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Services
-                        </a>
-                        <ul class="dropdown-menu animate__animated animate__flipInY animate__fast">
-                            <li><a class="dropdown-item py-2" href="/web.html">Web Development
-                                </a></li>
-                            <li><a class="dropdown-item py-2" href="/app.html">App Development
-                                </a></li>
-                            <li><a class="dropdown-item py-2" href="/ittraining.html">IT Training & Learning</a></li>
-                            <li><a class="dropdown-item py-2" href="/graphic.html">Graphic ,UI & UX Designing
-                                </a></li>
-                            <li><a class="dropdown-item py-2" href="/digital.html">Digital Marketing
-                                </a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link navbarlinks normal active" href="/team.html">Team</a>
-                    </li>
-
-                </ul>
-                <a class="contactbtn" href="/contact.html">Contact us</a>
-            </div>
-
+    <nav class="navbar navbar-expand-lg position-sticky top-0 z9 py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="logo">
+          <a href="/index.html" class="navbar-brand">
+            <img src="/img/logo.png" width="180px" class="img-fluid" alt="" />
+          </a>
         </div>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#sidebar"
+        >
+          <span>
+            <i class="bi bi-list text-white" style="font-size: 30px"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-3">
+              <a
+                class="nav-link navbarlinks normal"
+                aria-current="page"
+                href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link navbarlinks normal" href="/about.html"
+                >About</a
+              >
+            </li>
+
+            <li class="nav-item dropdown" id="servicesDropdown">
+              <a
+                class="nav-link navbarlinks normal dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul
+                class="dropdown-menu animate__animated animate__flipInY animate__fast"
+              >
+                <li>
+                  <a class="dropdown-item py-2" href="/web.html"
+                    >Web Development
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item py-2" href="/app.html"
+                    >App Development
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item py-2" href="/ittraining.html"
+                    >IT Training & Learning</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item py-2" href="/graphic.html"
+                    >Graphic ,UI & UX Designing
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item py-2" href="/digital.html"
+                    >Digital Marketing
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link navbarlinks normal active" href="/team.html"
+                >Team</a
+              >
+            </li>
+          </ul>
+          <a class="contactbtn" href="/contact.html">Contact us</a>
+        </div>
+      </div>
     </nav>
 
-
-  <div class="bg-team m-top">
-    <div class="bg-main-side">
-      <div class="position-relative">
-        <div class="box">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+    <div class="bg-team m-top">
+      <div class="bg-main-side">
+        <div class="position-relative">
+          <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div
+            class="position-absolute bg-dark d-flex align-items-center justify-content-center rounded-circle"
+            style="top: 150px; height: 200px; width: 200px; left: 30%"
+          >
+            <img
+              src="/img/mainlogo.png"
+              class="img-fluid"
+              width="200px"
+              alt=""
+            />
+          </div>
         </div>
-        <div class="position-absolute bg-dark d-flex align-items-center justify-content-center rounded-circle"
-          style="top: 150px; height: 200px; width: 200px; left: 30%;">
-          <img src="/img/mainlogo.png" class="img-fluid " width="200px" alt="">
+      </div>
+
+      <div class="position-relative w-100 overflow-hidden">
+        <div class="bg-dark-side w-100">
+          <div>
+            <div class="s-overlay"></div>
+            <div class="object-sphere"></div>
+            <div class="object-sphere-1"></div>
+            <div class="object-sphere-2"></div>
+          </div>
+
+          <div class="teamheadingcontent position-absolute">
+            <h2 class="text-main" data-aos="fade-up" data-aos-duration="900">
+              Our Team
+            </h2>
+            <p
+              class="text-semimain"
+              data-aos="fade-up"
+              data-aos-duration="1300"
+            >
+              We're all better when we're together
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="position-relative w-100 overflow-hidden">
-      <div class="bg-dark-side w-100">
-        <div>
-          <div class="s-overlay"></div>
-          <div class="object-sphere"></div>
-          <div class="object-sphere-1"></div>
-          <div class="object-sphere-2"></div>
-        </div>
+    <section class="my-5">
+      <div class="container">
+        <h3 class="text-dark text-center pt-3 heading position-relative">
+          Meet our team experts
+        </h3>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-12">
+            <div
+              class="position-relative d-flex align-items-center justify-content-center"
+            >
+              <div class="teamcard">
+                <div class="content">
+                  <div class="front">
+                    <div class="position-relative">
+                      <img
+                        src="/img/team/gaurav.jpg"
+                        class="img-fluid object-fit-cover"
+                        alt=""
+                      />
+                      <div class="profilename position-absolute">
+                        <h6 class="text-main fw-normal normal">Gaurav wagh</h6>
+                        <p class="text-white small">
+                          Chief Executive Officer
+                          <span class="d-block">CEO</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="back position-relative">
+                    <div class="backcontent position-absolute">
+                      <img
+                        src="/img/mainlogo.png"
+                        class="img-fluid"
+                        width="100px"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <div
+              class="position-relative d-flex align-items-center justify-content-center"
+            >
+              <div class="teamcard">
+                <div class="content">
+                  <div class="front">
+                    <div class="position-relative">
+                      <img
+                        src="/img/team/prashant.jpg"
+                        class="img-fluid object-fit-cover"
+                        alt=""
+                      />
+                      <div class="profilename position-absolute">
+                        <h6 class="text-main fw-normal normal">
+                          Prashant Deshmane
+                        </h6>
+                        <p class="text-white small">
+                          Chief Operating Officer
+                          <span class="d-block">COO/CTO</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="back position-relative">
+                    <div class="backcontent position-absolute">
+                      <img
+                        src="/img/mainlogo.png"
+                        class="img-fluid"
+                        width="100px"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <div
+              class="position-relative d-flex align-items-center justify-content-center"
+            >
+              <div class="teamcard">
+                <div class="content">
+                  <div class="front">
+                    <div class="position-relative">
+                      <img
+                        src="/img/team/dhiraj.jpg"
+                        class="img-fluid object-fit-cover"
+                        alt=""
+                      />
+                      <div class="profilename position-absolute">
+                        <h6 class="text-main fw-normal normal">
+                          Dhiraj Bhirud
+                        </h6>
+                        <p class="text-white small">Sr Software Developer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="back position-relative">
+                    <div class="backcontent position-absolute">
+                      <img
+                        src="/img/mainlogo.png"
+                        class="img-fluid"
+                        width="100px"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <div
+              class="position-relative d-flex align-items-center justify-content-center"
+            >
+              <div class="teamcard">
+                <div class="content">
+                  <div class="front">
+                    <div class="position-relative">
+                      <img
+                        src="/img/team/sonika.jpg"
+                        class="img-fluid object-fit-cover"
+                        alt=""
+                      />
+                      <div class="profilename position-absolute">
+                        <h6 class="text-main fw-normal normal">Sonika Pawar</h6>
+                        <p class="text-white small">UI/UX designer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="back position-relative">
+                    <div class="backcontent position-absolute">
+                      <img
+                        src="/img/mainlogo.png"
+                        class="img-fluid"
+                        width="100px"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <div
+              class="position-relative d-flex align-items-center justify-content-center"
+            >
+              <div class="teamcard">
+                <div class="content">
+                  <div class="front">
+                    <div class="position-relative">
+                      <img
+                        src="/img/team/siddhi.jpg"
+                        class="img-fluid object-fit-cover"
+                        alt=""
+                      />
+                      <div class="profilename position-absolute">
+                        <h6 class="text-main fw-normal normal">
+                          Siddhi Bacchav
+                        </h6>
+                        <p class="text-white small">
+                          Customer Support Executive
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="back position-relative">
+                    <div class="backcontent position-absolute">
+                      <img
+                        src="/img/mainlogo.png"
+                        class="img-fluid"
+                        width="100px"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <div
+              class="position-relative d-flex align-items-center justify-content-center"
+            >
+              <div class="teamcard">
+                <div class="content">
+                  <div class="front">
+                    <div class="position-relative">
+                      <img
+                        src="/img/team/nishantnew.jpg"
+                        class="img-fluid object-fit-cover"
+                        alt=""
+                      />
+                      <div class="profilename position-absolute">
+                        <h6 class="text-main fw-normal normal">
+                          Nishant phule
+                        </h6>
+                        <p class="text-white small">Jr Software Developer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="back position-relative">
+                    <div class="backcontent position-absolute">
+                      <img
+                        src="/img/mainlogo.png"
+                        class="img-fluid"
+                        width="100px"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <div class="teamheadingcontent  position-absolute">
-          <h2 class="text-main" data-aos="fade-up" data-aos-duration="900">Our Team</h2>
-          <p class="text-semimain" data-aos="fade-up" data-aos-duration="1300">We're all better when we're together
-          </p>
+          <div class="col-md-4 col-sm-6 col-12">
+            <div
+              class="position-relative d-flex align-items-center justify-content-center"
+            >
+              <div class="teamcard">
+                <div class="content">
+                  <div class="front">
+                    <div class="position-relative">
+                      <img
+                        src="/img/team/aparna.jpg"
+                        class="img-fluid object-fit-cover"
+                        alt=""
+                      />
+                      <div class="profilename position-absolute">
+                        <h6 class="text-main fw-normal normal">
+                          Aparna Bharti
+                        </h6>
+                        <p class="text-white small">Project Manager</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="back position-relative">
+                    <div class="backcontent position-absolute">
+                      <img
+                        src="/img/mainlogo.png"
+                        class="img-fluid"
+                        width="100px"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <div
+              class="position-relative d-flex align-items-center justify-content-center"
+            >
+              <div class="teamcard">
+                <div class="content">
+                  <div class="front">
+                    <div class="position-relative">
+                      <img
+                        src="/img/team/manali.jpg"
+                        class="img-fluid object-fit-cover"
+                        alt=""
+                      />
+                      <div class="profilename position-absolute">
+                        <h6 class="text-main fw-normal normal">Manali Donde</h6>
+                        <p class="text-white small">
+                          Digital Marketing Executive
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="back position-relative">
+                    <div class="backcontent position-absolute">
+                      <img
+                        src="/img/mainlogo.png"
+                        class="img-fluid"
+                        width="100px"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <div
+              class="position-relative d-flex align-items-center justify-content-center"
+            >
+              <div class="teamcard">
+                <div class="content">
+                  <div class="front">
+                    <div class="position-relative">
+                      <img
+                        src="/img/team/atharv.jpg"
+                        class="img-fluid object-fit-cover"
+                        alt=""
+                      />
+                      <div class="profilename position-absolute">
+                        <h6 class="text-main fw-normal normal">
+                          Atharv Bacchav
+                        </h6>
+                        <p class="text-white small">Graphic designer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="back position-relative">
+                    <div class="backcontent position-absolute">
+                      <img
+                        src="/img/mainlogo.png"
+                        class="img-fluid"
+                        width="100px"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <section class="my-5">
-    <div class="container">
-      <h3 class="text-dark text-center pt-3  heading position-relative">Meet our team experts</h3>
-      <div class="row ">
-        <div class="col-md-4 col-sm-6 col-12">
-          <div class="position-relative d-flex align-items-center justify-content-center ">
-            <div class="teamcard">
-              <div class="content">
-                <div class="front">
-                  <div class="position-relative">
-                    <img src="/img/team/gaurav.jpg" class="img-fluid object-fit-cover" alt="">
-                    <div class="profilename position-absolute">
-                      <h6 class="text-main fw-normal normal">Gaurav wagh</h6>
-                      <p class="text-white small">Chief Executive Officer
-                        <span class="d-block">CEO</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="back position-relative">
-                  <div class="backcontent position-absolute">
-                    <img src="/img/mainlogo.png" class="img-fluid" width="100px" alt="">
+    <footer class="bg-dark text-white normal">
+      <div class="bg-semidark">
+        <div class="container">
+          <div class="row py-4 d-flex align-items-center">
+            <div
+              class="col-md-6 col-lg-5 text-center text-md-start mb-4 mb-md-0"
+            >
+              <h6 class="mb-0">Get connected with us on social networks!</h6>
+            </div>
 
-                  </div>
-                </div>
+            <div class="col-md-6 col-lg-7 text-center text-md-end">
+              <div
+                class="col-sm-4 d-flex flex-nowrap align-items-center justify-content-center w-100 justify-content-sm-end"
+              >
+                <a
+                  href=""
+                  target="_blank"
+                  type="button"
+                  class="btn btn-sm btn-primary rounded-circle fbbtn btn-floating mx-1"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://github.com/Increditex-Software-Solutions-Pvt-Ltd"
+                  target="_blank"
+                  type="button"
+                  class="btn btn-sm btn-light rounded-circle btn-floating mx-1"
+                >
+                  <i class="fab fa-github text-dark"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/increditex_soft/"
+                  target="_blank"
+                  type="button"
+                  class="btn btn-sm btn-danger rounded-circle instabtn btn-floating mx-1"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/increditex-software-solutions-pvt-ltd/"
+                  target="_blank"
+                  type="button"
+                  class="btn btn-sm btn-primary rounded-circle linkdinbtn btn-floating mx-1"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
               </div>
             </div>
           </div>
-
         </div>
-        <div class="col-md-4 col-sm-6 col-12">
-          <div class="position-relative d-flex align-items-center justify-content-center ">
-            <div class="teamcard">
-              <div class="content">
-                <div class="front">
-                  <div class="position-relative">
-                    <img src="/img/team/prashant.jpg" class="img-fluid object-fit-cover" alt="">
-                    <div class="profilename position-absolute">
-                      <h6 class="text-main fw-normal normal">Prashant Deshmane</h6>
-                      <p class="text-white small">Chief Operating Officer
-                        <span class="d-block">COO/CTO</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="back position-relative">
-                  <div class="backcontent position-absolute">
-                    <img src="/img/mainlogo.png" class="img-fluid" width="100px" alt="">
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-md-4 col-sm-6 col-12">
-          <div class="position-relative d-flex align-items-center justify-content-center ">
-            <div class="teamcard">
-              <div class="content">
-                <div class="front">
-                  <div class="position-relative">
-                    <img src="/img/team/dhiraj.jpg" class="img-fluid object-fit-cover" alt="">
-                    <div class="profilename position-absolute">
-                      <h6 class="text-main fw-normal normal">Dhiraj Bhirud</h6>
-                      <p class="text-white small">Sr Software Developer</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="back position-relative">
-                  <div class="backcontent position-absolute">
-                    <img src="/img/mainlogo.png" class="img-fluid" width="100px" alt="">
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-md-4 col-sm-6 col-12">
-          <div class="position-relative d-flex align-items-center justify-content-center ">
-            <div class="teamcard">
-              <div class="content">
-                <div class="front">
-                  <div class="position-relative">
-                    <img src="/img/team/sonika.jpg" class="img-fluid object-fit-cover" alt="">
-                    <div class="profilename position-absolute">
-                      <h6 class="text-main fw-normal normal">Sonika Pawar</h6>
-                      <p class="text-white small">UI/UX designer</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="back position-relative">
-                  <div class="backcontent position-absolute">
-                    <img src="/img/mainlogo.png" class="img-fluid" width="100px" alt="">
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-md-4 col-sm-6 col-12">
-          <div class="position-relative d-flex align-items-center justify-content-center ">
-            <div class="teamcard">
-              <div class="content">
-                <div class="front">
-                  <div class="position-relative">
-                    <img src="/img/team/siddhinew.jpg" class="img-fluid object-fit-cover" alt="">
-                    <div class="profilename position-absolute">
-                      <h6 class="text-main fw-normal normal">Siddhi Bacchav</h6>
-                      <p class="text-white small">Customer Support Executive</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="back position-relative">
-                  <div class="backcontent position-absolute">
-                    <img src="/img/mainlogo.png" class="img-fluid" width="100px" alt="">
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-md-4 col-sm-6 col-12">
-          <div class="position-relative d-flex align-items-center justify-content-center ">
-            <div class="teamcard">
-              <div class="content">
-                <div class="front">
-                  <div class="position-relative">
-                    <img src="/img/team/nishantnew.jpg" class="img-fluid object-fit-cover" alt="">
-                    <div class="profilename position-absolute">
-                      <h6 class="text-main fw-normal normal">Nishant phule</h6>
-                      <p class="text-white small">Jr Software Developer</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="back position-relative">
-                  <div class="backcontent position-absolute">
-                    <img src="/img/mainlogo.png" class="img-fluid" width="100px" alt="">
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-     
-        <div class="col-md-4 col-sm-6 col-12">
-          <div class="position-relative d-flex align-items-center justify-content-center ">
-            <div class="teamcard">
-              <div class="content">
-                <div class="front">
-                  <div class="position-relative">
-                    <img src="/img/team/aparna.jpg" class="img-fluid object-fit-cover" alt="">
-                    <div class="profilename position-absolute">
-                      <h6 class="text-main fw-normal normal">Aparna Bharti</h6>
-                      <p class="text-white small">Project Manager</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="back position-relative">
-                  <div class="backcontent position-absolute">
-                    <img src="/img/mainlogo.png" class="img-fluid" width="100px" alt="">
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-md-4 col-sm-6 col-12">
-          <div class="position-relative d-flex align-items-center justify-content-center ">
-            <div class="teamcard">
-              <div class="content">
-                <div class="front">
-                  <div class="position-relative">
-                    <img src="/img/team/atharv.jpg" class="img-fluid object-fit-cover" alt="">
-                    <div class="profilename position-absolute">
-                      <h6 class="text-main fw-normal normal">Atharv Bacchav</h6>
-                      <p class="text-white small">Graphic designer</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="back position-relative">
-                  <div class="backcontent position-absolute">
-                    <img src="/img/mainlogo.png" class="img-fluid" width="100px" alt="">
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        
       </div>
-    </div>
-  </section>
 
+      <div class="container text-center text-md-left mt-5">
+        <div class="row mt-3 dark-grey-text">
+          <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+            <a class="navbar-brand" href="">
+              <img src="/img/logo.png" class="img-fluid" width="190px" alt="" />
+            </a>
 
-   <footer class="bg-dark text-white normal">
+            <p class="mt-4">
+              Inovative Creative Solutions, we provide .. Let's Connect....
+            </p>
+          </div>
 
-        <div class="bg-semidark">
-            <div class="container">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">Products</h6>
+            <hr class="mb-4 mt-2 d-inline-block mx-auto" style="width: 60px" />
+            <p>
+              <a class="nav-link small" href="#!">ERP & CMS systems</a>
+            </p>
+            <p>
+              <a class="nav-link small" href="#!">Custom pos software</a>
+            </p>
 
-                <div class="row py-4 d-flex align-items-center">
+            <p>
+              <a class="nav-link small" href="#!">ECommerce applications</a>
+            </p>
+            <p>
+              <a class="nav-link small" href="#!">Food delivery applications</a>
+            </p>
+          </div>
 
-                    <div class="col-md-6 col-lg-5 text-center text-md-start mb-4 mb-md-0">
-                        <h6 class="mb-0 ">Get connected with us on social networks!</h6>
-                    </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+            <hr class="mb-4 mt-2 d-inline-block mx-auto" style="width: 60px" />
+            <p>
+              <a class="nav-link" href="/web.html">Web Development</a>
+            </p>
+            <p>
+              <a class="nav-link" href="/app.html">App Development</a>
+            </p>
+            <p>
+              <a class="nav-link" href="/ittraining.html">IT training</a>
+            </p>
+            <p>
+              <a class="nav-link" href="/digital.html">Digital marketing</a>
+            </p>
+            <p>
+              <a class="nav-link" href="/graphic.html">Graphic Design</a>
+            </p>
+          </div>
 
-                    <div class="col-md-6 col-lg-7 text-center text-md-end">
-                        <div
-                            class="col-sm-4 d-flex flex-nowrap align-items-center justify-content-center w-100 justify-content-sm-end">
-                            <a href="" target="_blank" type="button" class="btn btn-sm btn-primary rounded-circle fbbtn btn-floating mx-1">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="https://github.com/Increditex-Software-Solutions-Pvt-Ltd" target="_blank" type="button" class="btn btn-sm btn-light rounded-circle btn-floating mx-1">
-                                <i class="fab fa-github text-dark"></i>
-                            </a>
-                            <a href="https://www.instagram.com/increditex_soft/" target="_blank" type="button"
-                                class="btn btn-sm btn-danger rounded-circle instabtn btn-floating mx-1">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/company/increditex-software-solutions-pvt-ltd/" target="_blank" type="button"
-                                class="btn btn-sm btn-primary rounded-circle linkdinbtn btn-floating mx-1">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </div>
-
-                    </div>
-
-                </div>
-
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase font-weight-bold">Contact</h6>
+            <hr class="mb-4 mt-2 d-inline-block mx-auto" style="width: 60px" />
+            <div style="text-align: justify">
+              <p>
+                <i class="fas fa-map-marker-alt me-3"></i> Second Floor , Office
+                No.204, The Avenue, behind Prakash Petrol Pump, Mumbai Naka,
+                Govind Nagar, Nashik, Maharashtra 422009
+              </p>
+              <p>
+                <a
+                  href="mailto:Contact@increditex.com"
+                  target="_blank"
+                  class="text-decoration-none text-white"
+                >
+                  <i class="fas fa-envelope me-3"></i> Contact@increditex.com
+                </a>
+              </p>
+              <p><i class="fas fa-phone me-3"></i>+91-9322793766</p>
+              <p><i class="fas fa-phone me-3"></i> +91-7666765736</p>
             </div>
+          </div>
         </div>
+      </div>
 
-        <div class="container text-center text-md-left mt-5">
-
-            <div class="row mt-3 dark-grey-text">
-
-                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
-                    <a class="navbar-brand" href="">
-                        <img src="/img/logo.png" class="img-fluid" width="190px" alt="">
-                    </a>
-
-                    <p class="mt-4">Inovative Creative Solutions, we provide .. Let's Connect....</p>
-
-                </div>
-
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-
-                    <h6 class="text-uppercase  font-weight-bold">Products</h6>
-                    <hr class="mb-4 mt-2 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <a class="nav-link small" href="#!">ERP & CMS systems</a>
-                    </p>
-                    <p>
-                        <a class="nav-link small" href="#!">Custom pos software</a>
-                    </p>
-
-                    <p>
-                        <a class="nav-link small" href="#!">ECommerce applications</a>
-                    </p>
-                    <p>
-                        <a class="nav-link small" href="#!">Food delivery applications</a>
-                    </p>
-
-
-                </div>
-
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-
-                    <h6 class="text-uppercase  font-weight-bold">Useful links</h6>
-                    <hr class="mb-4 mt-2 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <a class="nav-link" href="/web.html">Web Development</a>
-                    </p>
-                    <p>
-                        <a class="nav-link" href="/app.html">App Development</a>
-                    </p>
-                    <p>
-                        <a class="nav-link" href="/ittraining.html">IT training</a>
-                    </p>
-                    <p>
-                        <a class="nav-link" href="/digital.html">Digital marketing</a>
-                    </p>
-                    <p>
-                        <a class="nav-link" href="/graphic.html">Graphic Design</a>
-                    </p>
-
-                </div>
-
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-
-                    <h6 class="text-uppercase  font-weight-bold">Contact</h6>
-                    <hr class="mb-4 mt-2 d-inline-block mx-auto" style="width: 60px;">
-                    <div style="text-align: justify;">
-                        <p>
-                            <i class="fas fa-map-marker-alt me-3"></i> Second Floor , Office No.204, The Avenue, behind Prakash Petrol Pump, Mumbai Naka, Govind Nagar, Nashik, Maharashtra 422009
-                        </p>
-                        <p>
-                            <a href="mailto:Contact@increditex.com" target="_blank" class="text-decoration-none text-white">
-                                <i class="fas fa-envelope me-3"></i> Contact@increditex.com
-                            </a>
-                        </p>
-                        <p>
-                            <i class="fas fa-phone me-3"></i>+91-9322793766
-                                                            
-                        </p>
-                        <p>
-                            <i class="fas fa-phone me-3"></i> +91-7666765736 
-                                                            
-                        </p>
-                    </div>
-                  
-                 
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="text-center d-flex justify-content-center border-1 border-top border-secondary py-4">
-            © 2024 Copyright :
-            <a class="nav-link ms-2" href="https://mdbootstrap.com/">Increditex Software Solutions Pvt.Ltd</a>
-        </div>
-
+      <div
+        class="text-center d-flex justify-content-center border-1 border-top border-secondary py-4"
+      >
+        © 2024 Copyright :
+        <a class="nav-link ms-2" href="https://mdbootstrap.com/"
+          >Increditex Software Solutions Pvt.Ltd</a
+        >
+      </div>
     </footer>
-  <div class="offcanvas offcanvas-start sidebar" id="sidebar">
-
-    <div class="offcanvas-body">
+    <div class="offcanvas offcanvas-start sidebar" id="sidebar">
+      <div class="offcanvas-body">
         <div class="text-end">
-            <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+          <button
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+          ></button>
         </div>
 
         <div class="pt-3">
-            <ul class="list-unstyled text-center mt-5 fs-6">
-                <li class="nav-item sidenav py-3">
-                    <a title="home" href="/index.html" class="nav-link">Home</a>
+          <ul class="list-unstyled text-center mt-5 fs-6">
+            <li class="nav-item sidenav py-3">
+              <a title="home" href="/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item sidenav py-3">
+              <a title="about" href="/about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item sidenav dropdown" id="servicesDropdown">
+              <a
+                title="services"
+                class="nav-link sidenav text-white py-3 normal dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul
+                class="dropdown-menu animate__animated animate__flipInY animate__fast"
+              >
+                <li>
+                  <a class="dropdown-item py-2" href="/web.html"
+                    >Web Development
+                  </a>
                 </li>
-                <li class="nav-item sidenav py-3">
-                    <a title="about" href="/about.html" class="nav-link">About</a>
+                <li>
+                  <a class="dropdown-item py-2" href="/app.html"
+                    >App Development
+                  </a>
                 </li>
-                <li class="nav-item sidenav dropdown" id="servicesDropdown">
-                    <a title="services" class="nav-link  sidenav text-white py-3 normal dropdown-toggle"
-                        href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Services
-                    </a>
-                    <ul class="dropdown-menu animate__animated animate__flipInY animate__fast">
-                        <li><a class="dropdown-item py-2" href="/web.html">Web Development
-                            </a></li>
-                        <li><a class="dropdown-item py-2" href="/app.html">App Development
-                            </a></li>
-                        <li><a class="dropdown-item py-2" href="/ittraining.html">IT Training & Learning</a></li>
-                        <li><a class="dropdown-item py-2" href="/graphic.html">Graphic ,UI & UX Designing
-                            </a></li>
-                        <li><a class="dropdown-item py-2" href="/digital.html">Digital Marketing
-                            </a></li>
-                    </ul>
+                <li>
+                  <a class="dropdown-item py-2" href="/ittraining.html"
+                    >IT Training & Learning</a
+                  >
                 </li>
-
-
-                <li class="nav-item sidenav py-3">
-                    <a title="clients" href="/team.html" class="nav-link active">Team</a>
+                <li>
+                  <a class="dropdown-item py-2" href="/graphic.html"
+                    >Graphic ,UI & UX Designing
+                  </a>
                 </li>
-                <li class="nav-item sidenav py-3">
-                    <a title="gallery" href="/contact.html" class="nav-link">Contact</a>
+                <li>
+                  <a class="dropdown-item py-2" href="/digital.html"
+                    >Digital Marketing
+                  </a>
                 </li>
+              </ul>
+            </li>
 
-               
-            </ul>
-
-
+            <li class="nav-item sidenav py-3">
+              <a title="clients" href="/team.html" class="nav-link active"
+                >Team</a
+              >
+            </li>
+            <li class="nav-item sidenav py-3">
+              <a title="gallery" href="/contact.html" class="nav-link"
+                >Contact</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
-</div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="/main.js"></script>
-  <script>
-    $(document).ready(function () {
-      $(".testimonial .indicators li").click(function () {
-        var i = $(this).index();
-        var targetElement = $(".testimonial .tabs li");
-        targetElement.eq(i).addClass('active');
-        targetElement.not(targetElement[i]).removeClass('active');
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".testimonial .indicators li").click(function () {
+          var i = $(this).index();
+          var targetElement = $(".testimonial .tabs li");
+          targetElement.eq(i).addClass("active");
+          targetElement.not(targetElement[i]).removeClass("active");
+        });
+        $(".testimonial .tabs li").click(function () {
+          var targetElement = $(".testimonial .tabs li");
+          targetElement.addClass("active");
+          targetElement.not($(this)).removeClass("active");
+        });
       });
-      $(".testimonial .tabs li").click(function () {
-        var targetElement = $(".testimonial .tabs li");
-        targetElement.addClass('active');
-        targetElement.not($(this)).removeClass('active');
+      $(document).ready(function () {
+        $(".slider .swiper-pagination span").each(function (i) {
+          $(this)
+            .text(i + 1)
+            .prepend("0");
+        });
       });
-    });
-    $(document).ready(function () {
-      $(".slider .swiper-pagination span").each(function (i) {
-        $(this).text(i + 1).prepend("0");
-      });
-    });   
-  </script>
-  <script>
+    </script>
+    <script>
+      window.addEventListener("scroll", function () {
+        var navbar = document.querySelector(".navbar");
 
-    window.addEventListener('scroll', function () {
-      var navbar = document.querySelector('.navbar');
-
-      if (window.scrollY > 30) {
-        navbar.classList.add('navbar-scrolled');
-      } else {
-        navbar.classList.remove('navbar-scrolled');
+        if (window.scrollY > 30) {
+          navbar.classList.add("navbar-scrolled");
+        } else {
+          navbar.classList.remove("navbar-scrolled");
+        }
+      });
+    </script>
+    <script>
+      function startCounter(element, endValue, duration) {
+        $({ count: 0 }).animate(
+          { count: endValue },
+          {
+            duration: duration,
+            easing: "swing",
+            step: function () {
+              var mathCount = Math.ceil(this.count);
+              $(element).text(mathCount);
+            },
+            complete: function () {
+              // You can add additional completion logic here if needed
+            },
+          }
+        );
       }
-    });
-  </script>
-  <script>
-    function startCounter(element, endValue, duration) {
-      $({ count: 0 }).animate({ count: endValue }, {
-        duration: duration,
-        easing: 'swing',
-        step: function () {
-          var mathCount = Math.ceil(this.count);
-          $(element).text(mathCount);
-        },
-        complete: function () {
-          // You can add additional completion logic here if needed
-        }
+
+      // Function to handle the intersection observer callback
+      function handleIntersection(entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Start the counters when the section is in the viewport
+            startCounter("#number1", 100, 3000);
+            startCounter("#number2", 60, 3000);
+            startCounter("#number3", 50, 3000);
+            startCounter("#number4", 300, 3000);
+
+            // Disconnect the observer once the counters are started
+            observer.disconnect();
+          }
+        });
+      }
+
+      // Create an intersection observer instance
+      var observer = new IntersectionObserver(handleIntersection, {
+        threshold: 0.5,
       });
-    }
 
-    // Function to handle the intersection observer callback
-    function handleIntersection(entries, observer) {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          // Start the counters when the section is in the viewport
-          startCounter('#number1', 100, 3000);
-          startCounter('#number2', 60, 3000);
-          startCounter('#number3', 50, 3000);
-          startCounter('#number4', 300, 3000);
+      // Target the bg-counter section for observation
+      var target = document.querySelector(".bg-counter");
+      observer.observe(target);
+    </script>
 
-          // Disconnect the observer once the counters are started
-          observer.disconnect();
-        }
-      });
-    }
-
-    // Create an intersection observer instance
-    var observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
-
-    // Target the bg-counter section for observation
-    var target = document.querySelector('.bg-counter');
-    observer.observe(target);
-  </script>
-
-  <script>
-    AOS.init();
-  </script>
-</body>
-
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
