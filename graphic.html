@@ -1,522 +1,682 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Increditex</title>
+    <link rel="icon" href="/img/mainlogo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="services.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Increditex</title>
-    <link rel="icon" href="/img/mainlogo.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="services.css">
-</head>
-
-<body>
-  <div class="preloader">
-    <div class="preloader-block">
-        <div class="preloader-icon" style="display: none;">
-            <div class="ring">
-                <img src="/img/mainlogo.png" class="img-fluid animate__animated animate__flip" width="80px" alt="">
-                <span class="loader"></span>
-            </div>
+  <body>
+    <div class="preloader">
+      <div class="preloader-block">
+        <div class="preloader-icon" style="display: none">
+          <div class="ring">
+            <img
+              src="/img/mainlogo.png"
+              class="img-fluid animate__animated animate__flip"
+              width="80px"
+              alt=""
+            />
+            <span class="loader"></span>
+          </div>
         </div>
-
+      </div>
     </div>
-</div>
-  <nav class="navbar navbar-expand-lg  position-sticky top-0 z9 py-3">
-    <div class="container d-flex justify-content-between align-items-center">
+    <nav class="navbar navbar-expand-lg position-sticky top-0 z9 py-3">
+      <div class="container d-flex justify-content-between align-items-center">
         <div class="logo">
-            <a href="/index.html" class="navbar-brand">
-                <img src="/img/logo.png" width="180px" class="img-fluid" alt="">
-            </a>
+          <a href="/index.html" class="navbar-brand">
+            <img src="/img/logo.png" width="180px" class="img-fluid" alt="" />
+          </a>
         </div>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
-            <span>
-                <i class="bi bi-list text-white" style="font-size: 30px;"></i>
-            </span>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#sidebar"
+        >
+          <span>
+            <i class="bi bi-list text-white" style="font-size: 30px"></i>
+          </span>
         </button>
         <div class="collapse navbar-collapse">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                <li class="nav-item mx-3">
-                    <a class="nav-link navbarlinks normal" aria-current="page" href="/index.html">Home</a>
-                </li>
-                <li class="nav-item mx-3">
-                    <a class="nav-link navbarlinks normal" href="/about.html">About</a>
-                </li>
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-3">
+              <a
+                class="nav-link navbarlinks normal"
+                aria-current="page"
+                href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link navbarlinks normal" href="/about.html"
+                >About</a
+              >
+            </li>
 
-                <li class="nav-item dropdown" id="servicesDropdown">
-                    <a class="nav-link active navbarlinks normal dropdown-toggle" href="#" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Services
-                    </a>
-                    <ul class="dropdown-menu animate__animated animate__flipInY animate__fast">
-                        <li><a class="dropdown-item py-2" href="/web.html">Web Development
-                            </a></li>
-                        <li><a class="dropdown-item py-2" href="/app.html">App Development
-                            </a></li>
-                        <li><a class="dropdown-item py-2" href="/ittraining.html">IT Training & Learning</a></li>
-                        <li><a class="dropdown-item py-2" href="/graphic.html">Graphic ,UI & UX Designing
-                            </a></li>
-                        <li><a class="dropdown-item py-2" href="/digital.html">Digital Marketing
-                            </a></li>
-                    </ul>
+            <li class="nav-item dropdown" id="servicesDropdown">
+              <a
+                class="nav-link active navbarlinks normal dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul
+                class="dropdown-menu animate__animated animate__flipInY animate__fast"
+              >
+                <li>
+                  <a class="dropdown-item py-2" href="/web.html"
+                    >Web Development
+                  </a>
                 </li>
-                <li class="nav-item mx-3">
-                    <a class="nav-link navbarlinks normal" href="/team.html">Team</a>
+                <li>
+                  <a class="dropdown-item py-2" href="/app.html"
+                    >App Development
+                  </a>
                 </li>
-
-            </ul>
-            <a class="contactbtn" href="/contact.html">Contact us</a>
+                <li>
+                  <a class="dropdown-item py-2" href="/ittraining.html"
+                    >IT Training & Learning</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item py-2" href="/graphic.html"
+                    >Graphic ,UI & UX Designing
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item py-2" href="/digital.html"
+                    >Digital Marketing
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link navbarlinks normal" href="/team.html">Team</a>
+            </li>
+          </ul>
+          <a class="contactbtn" href="/contact.html">Contact us</a>
         </div>
+      </div>
+    </nav>
 
-    </div>
-</nav>
-
-
-  <div class="bg-graphic m-top">
-    <div class="overlay">
-      <div class="container top-padding">
-        <div class="bannerContent text-center text-md-end">
-          <div class="descover py-3">
-            <h2 class="py-3 text-semimain tagline" style="font-size: 35px; letter-spacing: 1.3px;" data-aos="fade-up"
-              data-aos-duration="800">We Discover , <span class="text-main">We Design</span>,<br> We
-              Execute</h2>
+    <div class="bg-graphic m-top">
+      <div class="overlay">
+        <div class="container top-padding">
+          <div class="bannerContent text-center text-md-end">
+            <div class="descover py-3">
+              <h2
+                class="py-3 text-semimain tagline"
+                style="font-size: 35px; letter-spacing: 1.3px"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
+                We Discover , <span class="text-main">We Design</span>,<br />
+                We Execute
+              </h2>
+            </div>
+            <p
+              class="text-semimain py-3"
+              data-aos="fade-up"
+              data-aos-duration="1300"
+            >
+              Futuristic web solutions for complex business challenges!!
+            </p>
           </div>
-          <p class="text-semimain py-3" data-aos="fade-up" data-aos-duration="1300">Futuristic web solutions for
-            complex business challenges!!</p>
         </div>
       </div>
     </div>
 
-  </div>
+    <div
+      class="container medium text-dark py-2 mt-5"
+      style="text-align: justify"
+    >
+      At Increditex software soluitons pvt.ltd, we specialize in creating
+      intuitive, visually stunning, and user-centric interfaces that elevate
+      digital experiences and drive engagement. With a focus on user experience
+      (UX) and user interface (UI) design principles, we help businesses
+      transform their ideas into captivating digital products that resonate with
+      their audience and deliver measurable results.
+    </div>
 
-
-  <div class="container medium text-dark py-2 mt-5" style="text-align: justify;">
-    At Increditex software soluitons pvt.ltd, we specialize in creating intuitive, visually
-    stunning, and user-centric interfaces that elevate digital experiences and drive
-    engagement. With a focus on user experience (UX) and user interface (UI) design
-    principles, we help businesses transform their ideas into captivating digital products
-    that resonate with their audience and deliver measurable results.
-
-
-  </div>
-
-  <section class="py-4 mt-3">
-    <div class="container service">
-      <h3 class="text-dark text-center pt-3  heading position-relative">Our Digital Marketing Services</h3>
-      <div class="row g-4 align-items-center mt-4">
-        <div class="col-lg-4">
-          <div class="nav nav-pills d-flex flex-row flex-md-column justify-content-between w-100 h-100 me-4"
-            role="tablist"><button
-              class="nav-link w-100 d-flex align-items-center text-start border p-4 py-3 mb-2 active"
-              data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button" aria-selected="false" role="tab"
-              tabindex="-1">
-              <span class="m-0 medium">
-                <img src="" class="" alt="">
-                User Experience (UX) Design</span>
-            </button><button class="nav-link w-100 d-flex align-items-center text-start border p-4 py-3 mb-2"
-              data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button" aria-selected="true" role="tab">
-              <span class="m-0 medium">
-                <img src="" class="" alt="">
-                User Interface (UI) Design
-
-              </span>
-            </button><button class="nav-link w-100 d-flex align-items-center text-start border p-4 py-3 mb-2"
-              data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button" aria-selected="false" role="tab"
-              tabindex="-1">
-              <span class="m-0 medium">
-                <img src="" class="" alt="">
-                 Mobile App Design
-
-              </span>
-            </button><button class="nav-link w-100 d-flex align-items-center text-start border p-4 py-3 mb-2"
-              data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button" aria-selected="false" role="tab"
-              tabindex="-1">
-              <span class="m-0 medium">
-                <img src="" class="" alt="">
-                Web Design
-              </span>
-            </button>
+    <section class="py-4 mt-3">
+      <div class="container service">
+        <h3 class="text-dark text-center pt-3 heading position-relative">
+          Our Graphic Designing Services
+        </h3>
+        <div class="row g-4 align-items-center mt-4">
+          <div class="col-lg-4">
+            <div
+              class="nav nav-pills d-flex flex-row flex-md-column justify-content-between w-100 h-100 me-4"
+              role="tablist"
+            >
+              <button
+                class="nav-link w-100 d-flex align-items-center text-start border p-4 py-3 mb-2 active"
+                data-bs-toggle="pill"
+                data-bs-target="#tab-pane-1"
+                type="button"
+                aria-selected="false"
+                role="tab"
+                tabindex="-1"
+              >
+                <span class="m-0 medium">
+                  <img src="" class="" alt="" />
+                  User Experience (UX) Design</span
+                ></button
+              ><button
+                class="nav-link w-100 d-flex align-items-center text-start border p-4 py-3 mb-2"
+                data-bs-toggle="pill"
+                data-bs-target="#tab-pane-2"
+                type="button"
+                aria-selected="true"
+                role="tab"
+              >
+                <span class="m-0 medium">
+                  <img src="" class="" alt="" />
+                  User Interface (UI) Design
+                </span></button
+              ><button
+                class="nav-link w-100 d-flex align-items-center text-start border p-4 py-3 mb-2"
+                data-bs-toggle="pill"
+                data-bs-target="#tab-pane-3"
+                type="button"
+                aria-selected="false"
+                role="tab"
+                tabindex="-1"
+              >
+                <span class="m-0 medium">
+                  <img src="" class="" alt="" />
+                  Mobile App Design
+                </span></button
+              ><button
+                class="nav-link w-100 d-flex align-items-center text-start border p-4 py-3 mb-2"
+                data-bs-toggle="pill"
+                data-bs-target="#tab-pane-4"
+                type="button"
+                aria-selected="false"
+                role="tab"
+                tabindex="-1"
+              >
+                <span class="m-0 medium">
+                  <img src="" class="" alt="" />
+                  Web Design
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="tab-content w-100">
+              <div
+                class="tab-pane fade active show"
+                id="tab-pane-1"
+                role="tabpanel"
+              >
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="position-relative">
+                      <img
+                        class="object-fit-cover rounded img-fluid"
+                        src="/img/webservices/uxdesign.jpg"
+                        alt=""
+                        style="height: 280px; width: 100%"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h4 class="mb-4">User Experience (UX) Design</h4>
+                    <p class="mb-4 normal">
+                      Our UX design services are centered around understanding
+                      the needs, preferences, and behaviors of your target
+                      audience to create seamless and delightful user
+                      experiences. Through user research, persona development,
+                      user journey mapping, and usability testing, we identify
+                      pain points and opportunities to optimize the interaction
+                      flow and enhance usability across your digital platforms.
+                      Our goal is to ensure that every interaction with your
+                      product is intuitive, efficient, and memorable, fostering
+                      positive user experiences and driving customer
+                      satisfaction and loyalty.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tab-pane-2" role="tabpanel">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="position-relative">
+                      <img
+                        class="object-fit-cover rounded img-fluid"
+                        src="/img/webservices/ui.png"
+                        alt=""
+                        style="height: 280px"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h4 class="mb-4">User Interface (UI) Design</h4>
+                    <p class="mb-4 normal">
+                      A visually appealing and intuitive user interface is
+                      essential for capturing users' attention and guiding them
+                      through your digital experience. Our UI design services
+                      focus on creating visually stunning and responsive
+                      interfaces that reflect your brand identity, values, and
+                      personality. From typography and color schemes to
+                      iconography and visual hierarchy, we pay attention to
+                      every detail to craft interfaces that not only look
+                      beautiful but also enhance usability and functionality.
+                      Our design team leverages industry-standard tools and best
+                      practices to create pixel-perfect designs that resonate
+                      with your audience and drive engagement.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tab-pane-3" role="tabpanel">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="position-relative">
+                      <img
+                        class="object-fit-cover rounded img-fluid"
+                        src="/img/webservices/mobileapp.png"
+                        alt=""
+                        style="height: 280px"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h4 class="mb-4">Mobile App Design</h4>
+                    <p class="mb-4 normal">
+                      In the mobile-first era, having a mobile app with a
+                      captivating and intuitive interface is essential for
+                      attracting and retaining users. Our mobile app design
+                      services are tailored to create immersive and engaging
+                      experiences across iOS, Android, and hybrid platforms.
+                      Whether you're launching a new app or redesigning an
+                      existing one, our design experts collaborate closely with
+                      you to understand your goals, audience, and brand vision.
+                      From wireframing and prototyping to UI design and
+                      interactive animations, we bring your app idea to life
+                      with designs that stand out in the crowded app marketplace
+                      and deliver a seamless user experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tab-pane-4" role="tabpanel">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="position-relative">
+                      <img
+                        class="object-fit-cover rounded img-fluid"
+                        src="/img/webservices/webdesign.jpg"
+                        alt=""
+                        style="height: 280px"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h4 class="mb-4">Web Design</h4>
+                    <p class="mb-4 normal">
+                      Your website is often the first touchpoint for potential
+                      customers, and its design plays a critical role in shaping
+                      their perception of your brand. Our web design services
+                      focus on creating responsive, user-friendly, and visually
+                      appealing websites that captivate visitors and drive
+                      conversions. Whether you need a corporate website,
+                      e-commerce platform, or landing page, our design team
+                      works closely with you to understand your objectives and
+                      audience preferences. From layout and navigation to
+                      typography and imagery, we craft designs that reflect your
+                      brand identity and communicate your message effectively,
+                      resulting in engaging and memorable online experiences for
+                      your visitors.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-lg-8">
-          <div class="tab-content w-100">
-            <div class="tab-pane fade active show" id="tab-pane-1" role="tabpanel">
-              <div class="row g-4">
-                <div class="col-md-6">
-                  <div class="position-relative">
-                    <img class="object-fit-cover rounded img-fluid" src="/img/webservices/uxdesign.jpg" alt=""
-                      style="height: 280px; width: 100%;">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <h4 class="mb-4">User Experience (UX) Design</h4>
-                  <p class="mb-4 normal">Our UX design services are centered around understanding the needs, preferences,
-                    and behaviors of your target audience to create seamless and delightful user
-                    experiences. Through user research, persona development, user journey mapping,
-                    and usability testing, we identify pain points and opportunities to optimize the
-                    interaction flow and enhance usability across your digital platforms. Our goal is to
-                    ensure that every interaction with your product is intuitive, efficient, and memorable,
-                    fostering positive user experiences and driving customer satisfaction and loyalty.
+      </div>
+    </section>
 
-                </div>
+    <section class="my-5">
+      <div class="graphicbannerSection p-5">
+        <div class="container py-3">
+          <h3 class="text-main display-5 fw-normal">Ready to Get Started?.</h3>
+          <p class="text-light mt-4">
+            Whether you're embarking on a new UI/UX(Graphic) design development
+            project or seeking to enhance your existing online presence,
+            <span class="text-main">Increditex Software Solutions</span> is here
+            to help!
+          </p>
+          <div class="mt-5">
+            <button class="btn contactbtn p-3 fs-6">Contact</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark text-white normal">
+      <div class="bg-semidark">
+        <div class="container">
+          <div class="row py-4 d-flex align-items-center">
+            <div
+              class="col-md-6 col-lg-5 text-center text-md-start mb-4 mb-md-0"
+            >
+              <h6 class="mb-0">Get connected with us on social networks!</h6>
+            </div>
+
+            <div class="col-md-6 col-lg-7 text-center text-md-end">
+              <div
+                class="col-sm-4 d-flex flex-nowrap align-items-center justify-content-center w-100 justify-content-sm-end"
+              >
+                <a
+                  href=""
+                  target="_blank"
+                  type="button"
+                  class="btn btn-sm btn-primary rounded-circle fbbtn btn-floating mx-1"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://github.com/Increditex-Software-Solutions-Pvt-Ltd"
+                  target="_blank"
+                  type="button"
+                  class="btn btn-sm btn-light rounded-circle btn-floating mx-1"
+                >
+                  <i class="fab fa-github text-dark"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/increditex_soft/"
+                  target="_blank"
+                  type="button"
+                  class="btn btn-sm btn-danger rounded-circle instabtn btn-floating mx-1"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/increditex-software-solutions-pvt-ltd/"
+                  target="_blank"
+                  type="button"
+                  class="btn btn-sm btn-primary rounded-circle linkdinbtn btn-floating mx-1"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
               </div>
             </div>
-            <div class="tab-pane fade" id="tab-pane-2" role="tabpanel">
-              <div class="row g-4">
-                <div class="col-md-6">
-                  <div class="position-relative">
-                    <img class="object-fit-cover rounded img-fluid" src="/img/webservices/ui.png" alt=""
-                      style="height: 280px;">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <h4 class="mb-4">User Interface (UI) Design
-                  </h4>
-                  <p class="mb-4 normal">A visually appealing and intuitive user interface is essential for capturing users'
-                    attention and guiding them through your digital experience. Our UI design services
-                    focus on creating visually stunning and responsive interfaces that reflect your brand
-                    identity, values, and personality. From typography and color schemes to iconography
-                    and visual hierarchy, we pay attention to every detail to craft interfaces that not only
-                    look beautiful but also enhance usability and functionality. Our design team
-                    leverages industry-standard tools and best practices to create pixel-perfect designs
-                    that resonate with your audience and drive engagement.
-                    
-
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="tab-pane-3" role="tabpanel">
-              <div class="row g-4">
-                <div class="col-md-6">
-                  <div class="position-relative">
-                    <img class="object-fit-cover rounded img-fluid" src="/img/webservices/mobileapp.png" alt=""
-                      style="height: 280px;">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <h4 class="mb-4"> Mobile App Design</h4>
-                  <p class="mb-4 normal">In the mobile-first era, having a mobile app with a captivating and intuitive interface is
-                    essential for attracting and retaining users. Our mobile app design services are
-                    tailored to create immersive and engaging experiences across iOS, Android, and
-                    hybrid platforms. Whether you're launching a new app or redesigning an existing
-                    one, our design experts collaborate closely with you to understand your goals,
-                    audience, and brand vision. From wireframing and prototyping to UI design and
-                    interactive animations, we bring your app idea to life with designs that stand out in
-                    the crowded app marketplace and deliver a seamless user experience.
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="tab-pane-4" role="tabpanel">
-              <div class="row g-4">
-                <div class="col-md-6">
-                  <div class="position-relative">
-                    <img class="object-fit-cover rounded img-fluid" src="/img/webservices/webdesign.jpg" alt=""
-                      style="height: 280px;">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <h4 class="mb-4"> Web Design</h4>
-                  <p class="mb-4 normal">Your website is often the first touchpoint for potential customers, and its design plays
-                    a critical role in shaping their perception of your brand. Our web design services
-                    focus on creating responsive, user-friendly, and visually appealing websites that
-                    captivate visitors and drive conversions. Whether you need a corporate website,
-                    e-commerce platform, or landing page, our design team works closely with you to
-                    understand your objectives and audience preferences. From layout and navigation to
-                    typography and imagery, we craft designs that reflect your brand identity and
-                    communicate your message effectively, resulting in engaging and memorable online
-                    experiences for your visitors.
-                    
-
-
-                </div>
-              </div>
-            </div>
-          
-            
-
           </div>
         </div>
       </div>
 
-    </div>
-  </section>
+      <div class="container text-center text-md-left mt-5">
+        <div class="row mt-3 dark-grey-text">
+          <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+            <a class="navbar-brand" href="">
+              <img src="/img/logo.png" class="img-fluid" width="190px" alt="" />
+            </a>
 
-  <section class="my-5">
-    <div class="graphicbannerSection p-5">
-       <div class="container py-3">
-        <h3 class="text-main display-5 fw-normal">Ready to Get Started?.</h3>
-        <p class="text-light mt-4">Whether you're embarking on a new UI/UX(Graphic) design development project or seeking to enhance
-          your existing online presence, <span class="text-main">Increditex Software Solutions</span> is here to help!</p>
-         <div class="mt-5">
-           <button class="btn contactbtn p-3 fs-6">Contact</button>
-         </div>
-       </div>
-     
-    </div>
-</section>
-  <footer class="bg-dark text-white normal">
+            <p class="mt-4">
+              Inovative Creative Solutions, we provide .. Let's Connect....
+            </p>
+          </div>
 
-        <div class="bg-semidark">
-            <div class="container">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">Products</h6>
+            <hr class="mb-4 mt-2 d-inline-block mx-auto" style="width: 60px" />
+            <p>
+              <a class="nav-link small" href="#!">ERP & CMS systems</a>
+            </p>
+            <p>
+              <a class="nav-link small" href="#!">Custom pos software</a>
+            </p>
 
-                <div class="row py-4 d-flex align-items-center">
+            <p>
+              <a class="nav-link small" href="#!">ECommerce applications</a>
+            </p>
+            <p>
+              <a class="nav-link small" href="#!">Food delivery applications</a>
+            </p>
+          </div>
 
-                    <div class="col-md-6 col-lg-5 text-center text-md-start mb-4 mb-md-0">
-                        <h6 class="mb-0 ">Get connected with us on social networks!</h6>
-                    </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+            <hr class="mb-4 mt-2 d-inline-block mx-auto" style="width: 60px" />
+            <p>
+              <a class="nav-link small" href="/web.html">Web Development</a>
+            </p>
+            <p>
+              <a class="nav-link small" href="/app.html">App Development</a>
+            </p>
+            <p>
+              <a class="nav-link small" href="/ittraining.html">IT training</a>
+            </p>
+            <p>
+              <a class="nav-link small" href="/digital.html"
+                >Digital marketing</a
+              >
+            </p>
+            <p>
+              <a class="nav-link small" href="/graphic.html">Graphic Design</a>
+            </p>
+          </div>
 
-                    <div class="col-md-6 col-lg-7 text-center text-md-end">
-                        <div
-                            class="col-sm-4 d-flex flex-nowrap align-items-center justify-content-center w-100 justify-content-sm-end">
-                            <a href="" target="_blank" type="button" class="btn btn-sm btn-primary rounded-circle fbbtn btn-floating mx-1">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="https://github.com/Increditex-Software-Solutions-Pvt-Ltd" target="_blank" type="button" class="btn btn-sm btn-light rounded-circle btn-floating mx-1">
-                                <i class="fab fa-github text-dark"></i>
-                            </a>
-                            <a href="https://www.instagram.com/increditex_soft/" target="_blank" type="button"
-                                class="btn btn-sm btn-danger rounded-circle instabtn btn-floating mx-1">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/company/increditex-software-solutions-pvt-ltd/" target="_blank" type="button"
-                                class="btn btn-sm btn-primary rounded-circle linkdinbtn btn-floating mx-1">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </div>
-
-                    </div>
-
-                </div>
-
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase font-weight-bold">Contact</h6>
+            <hr class="mb-4 mt-2 d-inline-block mx-auto" style="width: 60px" />
+            <div style="text-align: justify">
+              <p>
+                <i class="fas fa-map-marker-alt me-3"></i> Second Floor , Office
+                No.204, The Avenue, behind Prakash Petrol Pump, Mumbai Naka,
+                Govind Nagar, Nashik, Maharashtra 422009
+              </p>
+              <p>
+                <a
+                  href="mailto:Contact@increditex.com"
+                  target="_blank"
+                  class="text-decoration-none text-white"
+                >
+                  <i class="fas fa-envelope me-3"></i> Contact@increditex.com
+                </a>
+              </p>
+              <p><i class="fas fa-phone me-3"></i>+91-9322793766</p>
+              <p><i class="fas fa-phone me-3"></i> +91-7666765736</p>
             </div>
+          </div>
         </div>
+      </div>
 
-        <div class="container text-center text-md-left mt-5">
-
-            <div class="row mt-3 dark-grey-text">
-
-                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
-                    <a class="navbar-brand" href="">
-                        <img src="/img/logo.png" class="img-fluid" width="190px" alt="">
-                    </a>
-
-                    <p class="mt-4">Inovative Creative Solutions, we provide .. Let's Connect....</p>
-
-                </div>
-
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-
-                    <h6 class="text-uppercase  font-weight-bold">Products</h6>
-                    <hr class="mb-4 mt-2 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <a class="nav-link small" href="#!">ERP & CMS systems</a>
-                    </p>
-                    <p>
-                        <a class="nav-link small" href="#!">Custom pos software</a>
-                    </p>
-
-                    <p>
-                        <a class="nav-link small" href="#!">ECommerce applications</a>
-                    </p>
-                    <p>
-                        <a class="nav-link small" href="#!">Food delivery applications</a>
-                    </p>
-
-
-                </div>
-
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-
-                    <h6 class="text-uppercase  font-weight-bold">Useful links</h6>
-                    <hr class="mb-4 mt-2 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <a class="nav-link small" href="/web.html">Web Development</a>
-                    </p>
-                    <p>
-                        <a class="nav-link small" href="/app.html">App Development</a>
-                    </p>
-                    <p>
-                        <a class="nav-link small" href="/ittraining.html">IT training</a>
-                    </p>
-                    <p>
-                        <a class="nav-link small" href="/digital.html">Digital marketing</a>
-                    </p>
-                    <p>
-                        <a class="nav-link small" href="/graphic.html">Graphic Design</a>
-                    </p>
-
-                </div>
-
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-
-                    <h6 class="text-uppercase  font-weight-bold">Contact</h6>
-                    <hr class="mb-4 mt-2 d-inline-block mx-auto" style="width: 60px;">
-                    <div style="text-align: justify;">
-                        <p>
-                            <i class="fas fa-map-marker-alt me-3"></i> Second Floor , Office No.204, The Avenue, behind Prakash Petrol Pump, Mumbai Naka, Govind Nagar, Nashik, Maharashtra 422009
-                        </p>
-                        <p>
-                            <a href="mailto:Contact@increditex.com" target="_blank" class="text-decoration-none text-white">
-                                <i class="fas fa-envelope me-3"></i> Contact@increditex.com
-                            </a>
-                        </p>
-                        <p>
-                            <i class="fas fa-phone me-3"></i>+91-9322793766
-                                                            
-                        </p>
-                        <p>
-                            <i class="fas fa-phone me-3"></i> +91-7666765736 
-                                                            
-                        </p>
-                    </div>
-                  
-                 
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="text-center d-flex justify-content-center border-1 border-top border-secondary py-4">
-            © 2024 Copyright :
-            <a class="nav-link ms-2" href="https://mdbootstrap.com/">Increditex Software Solutions Pvt.Ltd</a>
-        </div>
-
+      <div
+        class="text-center d-flex justify-content-center border-1 border-top border-secondary py-4"
+      >
+        © 2024 Copyright :
+        <a class="nav-link ms-2" href="https://mdbootstrap.com/"
+          >Increditex Software Solutions Pvt.Ltd</a
+        >
+      </div>
     </footer>
-  <div class="offcanvas offcanvas-start sidebar" id="sidebar">
-
-    <div class="offcanvas-body">
+    <div class="offcanvas offcanvas-start sidebar" id="sidebar">
+      <div class="offcanvas-body">
         <div class="text-end">
-            <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+          <button
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+          ></button>
         </div>
 
         <div class="pt-3">
-            <ul class="list-unstyled text-center mt-5 fs-6">
-                <li class="nav-item sidenav py-3">
-                    <a title="home" href="/index.html" class="nav-link">Home</a>
+          <ul class="list-unstyled text-center mt-5 fs-6">
+            <li class="nav-item sidenav py-3">
+              <a title="home" href="/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item sidenav py-3">
+              <a title="about" href="/about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item sidenav dropdown" id="servicesDropdown">
+              <a
+                title="services"
+                class="nav-link active sidenav text-white py-3 normal dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul
+                class="dropdown-menu animate__animated animate__flipInY animate__fast"
+              >
+                <li>
+                  <a class="dropdown-item py-2" href="/web.html"
+                    >Web Development
+                  </a>
                 </li>
-                <li class="nav-item sidenav py-3">
-                    <a title="about" href="/about.html" class="nav-link">About</a>
+                <li>
+                  <a class="dropdown-item py-2" href="/app.html"
+                    >App Development
+                  </a>
                 </li>
-                <li class="nav-item sidenav dropdown" id="servicesDropdown">
-                    <a title="services" class="nav-link active  sidenav text-white py-3 normal dropdown-toggle"
-                        href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Services
-                    </a>
-                    <ul class="dropdown-menu animate__animated animate__flipInY animate__fast">
-                        <li><a class="dropdown-item py-2" href="/web.html">Web Development
-                            </a></li>
-                        <li><a class="dropdown-item py-2" href="/app.html">App Development
-                            </a></li>
-                        <li><a class="dropdown-item py-2" href="/ittraining.html">IT Training & Learning</a></li>
-                        <li><a class="dropdown-item py-2" href="/graphic.html">Graphic ,UI & UX Designing
-                            </a></li>
-                        <li><a class="dropdown-item py-2" href="/digital.html">Digital Marketing
-                            </a></li>
-                    </ul>
+                <li>
+                  <a class="dropdown-item py-2" href="/ittraining.html"
+                    >IT Training & Learning</a
+                  >
                 </li>
-
-
-                <li class="nav-item sidenav py-3">
-                    <a title="clients" href="/team.html" class="nav-link">Team</a>
+                <li>
+                  <a class="dropdown-item py-2" href="/graphic.html"
+                    >Graphic ,UI & UX Designing
+                  </a>
                 </li>
-                <li class="nav-item sidenav py-3">
-                    <a title="gallery" href="/contact.html" class="nav-link">Contact</a>
+                <li>
+                  <a class="dropdown-item py-2" href="/digital.html"
+                    >Digital Marketing
+                  </a>
                 </li>
+              </ul>
+            </li>
 
-               
-            </ul>
-
-
+            <li class="nav-item sidenav py-3">
+              <a title="clients" href="/team.html" class="nav-link">Team</a>
+            </li>
+            <li class="nav-item sidenav py-3">
+              <a title="gallery" href="/contact.html" class="nav-link"
+                >Contact</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
-</div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="/main.js"></script>
-  <script>
-    $(document).ready(function () {
-      $(".testimonial .indicators li").click(function () {
-        var i = $(this).index();
-        var targetElement = $(".testimonial .tabs li");
-        targetElement.eq(i).addClass('active');
-        targetElement.not(targetElement[i]).removeClass('active');
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".testimonial .indicators li").click(function () {
+          var i = $(this).index();
+          var targetElement = $(".testimonial .tabs li");
+          targetElement.eq(i).addClass("active");
+          targetElement.not(targetElement[i]).removeClass("active");
+        });
+        $(".testimonial .tabs li").click(function () {
+          var targetElement = $(".testimonial .tabs li");
+          targetElement.addClass("active");
+          targetElement.not($(this)).removeClass("active");
+        });
       });
-      $(".testimonial .tabs li").click(function () {
-        var targetElement = $(".testimonial .tabs li");
-        targetElement.addClass('active');
-        targetElement.not($(this)).removeClass('active');
+      $(document).ready(function () {
+        $(".slider .swiper-pagination span").each(function (i) {
+          $(this)
+            .text(i + 1)
+            .prepend("0");
+        });
       });
-    });
-    $(document).ready(function () {
-      $(".slider .swiper-pagination span").each(function (i) {
-        $(this).text(i + 1).prepend("0");
-      });
-    });   
-  </script>
-  <script>
+    </script>
+    <script>
+      window.addEventListener("scroll", function () {
+        var navbar = document.querySelector(".navbar");
 
-    window.addEventListener('scroll', function () {
-      var navbar = document.querySelector('.navbar');
-
-      if (window.scrollY > 30) {
-        navbar.classList.add('navbar-scrolled');
-      } else {
-        navbar.classList.remove('navbar-scrolled');
+        if (window.scrollY > 30) {
+          navbar.classList.add("navbar-scrolled");
+        } else {
+          navbar.classList.remove("navbar-scrolled");
+        }
+      });
+    </script>
+    <script>
+      function startCounter(element, endValue, duration) {
+        $({ count: 0 }).animate(
+          { count: endValue },
+          {
+            duration: duration,
+            easing: "swing",
+            step: function () {
+              var mathCount = Math.ceil(this.count);
+              $(element).text(mathCount);
+            },
+            complete: function () {
+              // You can add additional completion logic here if needed
+            },
+          }
+        );
       }
-    });
-  </script>
-  <script>
-    function startCounter(element, endValue, duration) {
-      $({ count: 0 }).animate({ count: endValue }, {
-        duration: duration,
-        easing: 'swing',
-        step: function () {
-          var mathCount = Math.ceil(this.count);
-          $(element).text(mathCount);
-        },
-        complete: function () {
-          // You can add additional completion logic here if needed
-        }
+
+      // Function to handle the intersection observer callback
+      function handleIntersection(entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Start the counters when the section is in the viewport
+            startCounter("#number1", 100, 3000);
+            startCounter("#number2", 60, 3000);
+            startCounter("#number3", 50, 3000);
+            startCounter("#number4", 300, 3000);
+
+            // Disconnect the observer once the counters are started
+            observer.disconnect();
+          }
+        });
+      }
+
+      // Create an intersection observer instance
+      var observer = new IntersectionObserver(handleIntersection, {
+        threshold: 0.5,
       });
-    }
 
-    // Function to handle the intersection observer callback
-    function handleIntersection(entries, observer) {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          // Start the counters when the section is in the viewport
-          startCounter('#number1', 100, 3000);
-          startCounter('#number2', 60, 3000);
-          startCounter('#number3', 50, 3000);
-          startCounter('#number4', 300, 3000);
+      // Target the bg-counter section for observation
+      var target = document.querySelector(".bg-counter");
+      observer.observe(target);
+    </script>
 
-          // Disconnect the observer once the counters are started
-          observer.disconnect();
-        }
-      });
-    }
-
-    // Create an intersection observer instance
-    var observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
-
-    // Target the bg-counter section for observation
-    var target = document.querySelector('.bg-counter');
-    observer.observe(target);
-  </script>
-
-  <script>
-    AOS.init();
-  </script>
-</body>
-
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
